@@ -9,13 +9,19 @@ public class PlayerController : MonoBehaviour
     public float MaxSpeed = 1;
     public float rotationSpeed; // Degrees per second
 
+
     public Rigidbody2D rb;
     Vector2 input;
+
+    //Animation
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -23,6 +29,7 @@ public class PlayerController : MonoBehaviour
     {
         input = GameController.GetPlayerInput();
         HandleMovement();
+        HandleAnimation();
     }
 
     // Handles player movement input
@@ -57,7 +64,41 @@ public class PlayerController : MonoBehaviour
     // Handles player sprite animation
     public void HandleAnimation()
     {
+        animator.SetInteger("direction_y", (int)input.y);
 
+        //Turning while not moving
+        animator.SetInteger("direction_x", (int)input.x);
+
+        if(input.x > 0)
+        {
+             spriteRenderer.flipX = true; 
+        }
+        else
+        {
+            spriteRenderer.flipX = false;
+        }
+        //Not_moving transition accelerating back to idle
+        if (input.x == 0)
+        {
+            animator.SetBool("not_moving_x", true);
+        }else
+        {
+            animator.SetBool("not_moving_x", false);
+        }
+
+        if (input.y == 0)
+        {
+            animator.SetBool("not_moving_y", true);
+        }
+        else
+        {
+            animator.SetBool("not_moving_y", false);
+        }
+
+
+        //animator.SetFloat("direction_x", input.x)
+        Debug.Log(input.x);
+        
     }
 
     // Handles player SFX
