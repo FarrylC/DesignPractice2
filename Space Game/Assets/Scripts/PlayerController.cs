@@ -14,14 +14,14 @@ public class PlayerController : MonoBehaviour
     Vector2 input;
 
     //Animation
-    private Animator animator;
-    private SpriteRenderer spriteRenderer;
+    public Animator animator;
+    public SpriteRenderer spriteRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponent<Animator>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        //animator = GetComponent<Animator>();
+        //spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
