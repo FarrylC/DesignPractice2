@@ -94,11 +94,6 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("not_moving_y", false);
         }
-
-
-        //animator.SetFloat("direction_x", input.x)
-        Debug.Log(input.x);
-        
     }
 
     // Handles player SFX
