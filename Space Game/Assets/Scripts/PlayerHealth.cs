@@ -12,7 +12,7 @@ public class PlayerHealth : MonoBehaviour
     private float _time;
     private float _damageDuration;
     private bool _damaged;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,7 +45,7 @@ public class PlayerHealth : MonoBehaviour
     }
 
     public void Death()
-    { 
+    {
         //animation of screen crack and fade out to reload scene
 
     }
@@ -65,6 +65,7 @@ public class PlayerHealth : MonoBehaviour
 
         }
     }
+  
 
     void OnCollisionStay2D(Collision2D collision)
     {
@@ -74,6 +75,16 @@ public class PlayerHealth : MonoBehaviour
 
             setHealth(health - 3);
         }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        _damaged = false;
+    }
+
+    public bool IsDamaged
+    {
+        get { return _damaged; }
+        set { _damaged = value; }
     }
 
 }
