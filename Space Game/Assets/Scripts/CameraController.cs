@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+    public Animator animator;
+    
     public GameObject player;
     public Camera orthoCamera;
     public Rigidbody2D rb;

@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -9,15 +11,19 @@ public class PlayerHealth : MonoBehaviour
 
     public Rigidbody2D rb;
 
-    private float _time;
-    private float _damageDuration;
-    private bool _damaged;
+    public Slider healthBar;
+
+    private float _invincibleTime = 1.0f;
+    private bool _isInvincible = false;
     
     // Start is called before the first frame update
     void Start()
     {
         setHealth(maxHealth);
-        _damageDuration = 1f;
+
+        //Set start value of health bar
+        healthBar.maxValue = maxHealth;
+        healthBar.value = maxHealth;
     }
 
     // Update is called once per frame
@@ -36,44 +42,63 @@ public class PlayerHealth : MonoBehaviour
             health = maxHealth;
         }
 
-        //When health reaches 0, player Dies
+        //When health reaches 0, health stays at zero.
         else if (health <= 0)
         {
             health = 0;
-            Death();
         }
-    }
 
-    public void Death()
-    { 
-        //animation of screen crack and fade out to reload scene
-
+        //Update health bar value
+        healthBar.value = _health;
+        print("Value:" + healthBar.value);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        // If the collided object is an asteroid, take damage
+        //Reduces health by one when colliding with asteroid and stops runs funtion to stop damage for short period
         if (collision.gameObject.CompareTag("Asteroid"))
         {
-            _damaged = true;
+            if (!_isInvincible)
+            {
+                setHealth(health - 1);
 
-            // Take damage depending on the size of the asteroid
-            setHealth(health - 3);
-
-            rb.AddForce(new Vector2(1000, 1000) * GameController.GetPlayerInput(), ForceMode2D.Force);
-
-
+                SetInvincible();
+            }
         }
     }
 
     void OnCollisionStay2D(Collision2D collision)
     {
+        
+        //Reduces health by one when colliding with asteroid and stops runs funtion to stop damage for short period
         if (collision.gameObject.CompareTag("Asteroid"))
         {
-            _damaged = true;
+            if (!_isInvincible)
+            {
+                setHealth(health - 1);
 
-            setHealth(health - 3);
+                SetInvincible();
+            }
         }
     }
 
+
+    //Stop player from taking damage for a given time.
+    public void SetInvincible()
+    {
+        _isInvincible = true;
+
+        //Stops the SetDamageable() function.
+        CancelInvoke("SetDamageable");
+
+        //ANIMATION HERE
+
+        //Restarts the SetDamageable() funtion.
+        Invoke("SetDamageable", _invincibleTime);
+    }
+
+    void SetDamageable()
+    {
+        _isInvincible = false;
+    }
 }
