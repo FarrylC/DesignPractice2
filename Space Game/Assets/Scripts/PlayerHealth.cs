@@ -47,14 +47,6 @@ public class PlayerHealth : MonoBehaviour
         {
             health = 0;
         }
-<<<<<<< Updated upstream
-    }
-
-    public void Death()
-    { 
-        //animation of screen crack and fade out to reload scene
-=======
->>>>>>> Stashed changes
 
         //Update health bar value
         healthBar.value = _health;
