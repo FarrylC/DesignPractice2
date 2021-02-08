@@ -7,12 +7,18 @@ using UnityEngine;
 
 public class SFX : MonoBehaviour
 {
-    private AudioSource acc;
-    private AudioSource dec;
-    private AudioSource main_mt;
-    private AudioSource left_mt;
-    private AudioSource right_mt;
-    private AudioSource front_mt;
+    public AudioSource acc;
+    public AudioSource dec;
+    public AudioSource main_mt;
+    public AudioSource left_mt;
+    public AudioSource right_mt;
+    public AudioSource front_mt;
+    public AudioSource l_acc;
+    public AudioSource r_acc;
+    public AudioSource l_dec;
+    public AudioSource r_dec;
+
+
 
     public bool deceleration;
     public bool acceleration;
