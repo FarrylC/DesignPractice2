@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    // Player states
+    public enum State { idle, hurt, invulnerable };
+    public State state;
+
     public float AccelerationTime = 1;
     public float DecelerationTime = 1;
     public float MaxSpeed = 1;
