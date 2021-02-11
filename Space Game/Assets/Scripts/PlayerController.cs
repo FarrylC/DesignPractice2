@@ -193,10 +193,10 @@ public class PlayerController : MonoBehaviour
         }
 
         //When Player is hurt
-        if(gameObject.GetComponent<PlayerHealth>().IsDamaged == true)
+        /*if(gameObject.GetComponent<PlayerHealth>().IsDamaged == true)
         {
             StartCoroutine(PlayerDamaged());
-        }
+        }*/
        /* else
         {
             Debug.Log("HELLO");
