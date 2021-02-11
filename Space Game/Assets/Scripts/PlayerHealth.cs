@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -9,15 +10,20 @@ public class PlayerHealth : MonoBehaviour
 
     public Rigidbody2D rb;
 
-    private float _time;
-    private float _damageDuration;
-    private bool _damaged;
+    public Slider healthBar;
 
+    private float _invincibleTime = 1.0f;
+    private bool _isInvincible = false;
+    private bool _damaged;
+    
     // Start is called before the first frame update
     void Start()
     {
         setHealth(maxHealth);
-        _damageDuration = 1f;
+
+        //Set start value of health bar
+        healthBar.maxValue = maxHealth;
+        healthBar.value = maxHealth;
     }
 
     // Update is called once per frame
@@ -40,51 +46,60 @@ public class PlayerHealth : MonoBehaviour
         else if (health <= 0)
         {
             health = 0;
-            Death();
         }
+
+        //Update health bar value
+        healthBar.value = _health;
+        print("Value:" + healthBar.value);
     }
 
-    public void Death()
-    {
-        //animation of screen crack and fade out to reload scene
-
-    }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
         // If the collided object is an asteroid, take damage
         if (collision.gameObject.CompareTag("Asteroid"))
         {
-            _damaged = true;
+            if (!_isInvincible)
+            {
+                _damaged = true;
+                
+                setHealth(health - 1);
 
-            // Take damage depending on the size of the asteroid
-            setHealth(health - 3);
-
-            rb.AddForce(new Vector2(1000, 1000) * GameController.GetPlayerInput(), ForceMode2D.Force);
-
-
+                SetInvincible();
+            }
         }
     }
-  
 
     void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Asteroid"))
         {
-            _damaged = true;
+            if (!_isInvincible)
+            {
+                _damaged = true;
 
-            setHealth(health - 3);
+                setHealth(health - 1);
+
+                SetInvincible();
+            }
         }
     }
-    private void OnCollisionExit2D(Collision2D collision)
+
+    //Stop player from taking damage for a given time.
+    public void SetInvincible()
     {
-        _damaged = false;
+        _isInvincible = true;
+
+        //Stops the SetDamageable() function.
+        CancelInvoke("SetDamageable");
+
+        //Restarts the SetDamageable() funtion.
+        Invoke("SetDamageable", _invincibleTime);
     }
 
-    public bool IsDamaged
+    void SetDamageable()
     {
-        get { return _damaged; }
-        set { _damaged = value; }
+        _isInvincible = false;
     }
 
 }
