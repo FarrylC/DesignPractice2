@@ -50,7 +50,6 @@ public class PlayerHealth : MonoBehaviour
 
         //Update health bar value
         healthBar.value = _health;
-        print("Value:" + healthBar.value);
     }
 
 
@@ -73,6 +72,21 @@ public class PlayerHealth : MonoBehaviour
     void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Asteroid"))
+        {
+            if (!_isInvincible)
+            {
+                _damaged = true;
+
+                setHealth(health - 1);
+
+                SetInvincible();
+            }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
         {
             if (!_isInvincible)
             {

@@ -7,9 +7,14 @@ public class Carrier : MonoBehaviour
     public enum CarrierType { Patrol, Stationary }
     public CarrierType type;
 
+    public GameObject minion;
+    public int spawnedMinions;
+    public int spawnableMinions;
+
     public float visionRange, visionAngle, spawnRange;
     [HideInInspector] public bool isPlayerInSight, isPlayerInRange;
     public float cooldownTime;
+    public float currentCooldown;
 
     private int currentWaypoint = 0;
     public List<GameObject> waypoints = new List<GameObject>();
@@ -40,7 +45,9 @@ public class Carrier : MonoBehaviour
 
         // Check if the player is within minion spawn range
         if (Vector2.Distance(transform.position, player.transform.position) < spawnRange)
+        { 
             isPlayerInRange = true;
+        }     
         else
             isPlayerInRange = false;
     }
@@ -86,7 +93,7 @@ public class Carrier : MonoBehaviour
     }
 
     public void SpawnMinion()
-    {
-
+    { 
+        Instantiate(minion, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
     }
 }
