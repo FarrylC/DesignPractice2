@@ -12,27 +12,31 @@ public class Minion : MonoBehaviour
     public float minionMaxSpeed;
     public float deathTimer;
     
-    // Start is called before the first frame update
     void Start()
     {
+        //set timer to 5 and find player object
         deathTimer = 5f;
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
-    // Update is called once per frame
     void Update()
     {
+        //point toward player
         rb.transform.up = player.transform.position - transform.position;
 
+        //accelerate and move toward player
         rb.AddForce(minionAcceleration * transform.up, ForceMode2D.Impulse);
         rb.velocity = Vector2.ClampMagnitude(rb.velocity, minionMaxSpeed);
 
+        //count down the timer to destroy object
         deathTimer -= 1 * Time.deltaTime;
 
+        //detroy gameObject after set amount of time
         if (deathTimer <= 0)
             Destroy(gameObject);
     }
 
+    //detroy minion on contact with player
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))

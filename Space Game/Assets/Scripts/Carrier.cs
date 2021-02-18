@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Carrier : MonoBehaviour
 {
@@ -22,6 +23,8 @@ public class Carrier : MonoBehaviour
     public float acceleration, maxSpeed, waypointBuffer;
 
     [HideInInspector] public GameObject player;
+    public Image detect;
+    public GameObject detectBoarder;
 
     // Start is called before the first frame update
     void Start()
@@ -54,6 +57,9 @@ public class Carrier : MonoBehaviour
 
     public void Patrol()
     {
+        detect.GetComponent<Image>().color = Color.white;
+        detectBoarder.SetActive(false);
+
         // Only patrol if the carrier is a patrol type
         if (type != CarrierType.Patrol)
             return;
@@ -80,6 +86,9 @@ public class Carrier : MonoBehaviour
 
     public void Chase()
     {
+        detect.GetComponent<Image>().color = Color.yellow;
+        detectBoarder.SetActive(true);
+
         // Point towards the player
         transform.up = player.transform.position - transform.position;
 
@@ -93,7 +102,10 @@ public class Carrier : MonoBehaviour
     }
 
     public void SpawnMinion()
-    { 
+    {
+        detect.GetComponent<Image>().color = Color.red;
+
+        //Spawn a minion on top of the current Carrier
         Instantiate(minion, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
     }
 }
