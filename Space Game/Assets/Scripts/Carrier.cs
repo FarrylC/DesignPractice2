@@ -32,6 +32,8 @@ public class Carrier : MonoBehaviour
     {
         Detect();
         HandleAnimation();
+
+        //DrawVisionCone();
     }
 
     public void Detect()
@@ -115,14 +117,20 @@ public class Carrier : MonoBehaviour
         }
 
     }
+    //This is called from teh Redirector script on the enemy's sprite child
     public void AnimEventAlertBlinkOffc(string message)
     {
+        //Activated via the EyeShut animation Event when it gets to fully closed 
         if(message.Equals("EyeShut") && HasBlinked)
         {
+            //makes it so that animation stops when eyes closed
             animator.speed = 0;
+            //waits a few seconds before opening it again
             StartCoroutine(PauseToOpenEye());
+            //plays rest of blink animation
 
         }
+        //Transitions to another state so its stops blinking
         if(message.Equals("BlinkAnimationOver") && HasBlinked)
         {
             HasBlinked = false;
@@ -133,5 +141,11 @@ public class Carrier : MonoBehaviour
         animator.speed = 0;
         yield return new WaitForSeconds(blinkSpeed);
         animator.speed = 1;
+    }
+    private void DrawVisionCone()
+    {
+        Debug.DrawRay(transform.position, transform.up, Color.red, visionRange * 20);
+        Debug.DrawRay(transform.position, new Vector2(Mathf.Sin(visionRange), Mathf.Cos(visionAngle)), Color.green, visionRange);
+        Debug.DrawRay(transform.position, new Vector2(Mathf.Sin(-visionRange), Mathf.Cos(-visionAngle)), Color.green, visionRange);
     }
 }
