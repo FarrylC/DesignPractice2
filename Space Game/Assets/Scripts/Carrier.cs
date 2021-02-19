@@ -17,7 +17,7 @@ public class Carrier : MonoBehaviour
     public float acceleration, maxSpeed, waypointBuffer;
 
     public Animator animator;
-
+    public bool HasBlinked;
     [HideInInspector] public GameObject player;
 
     // Start is called before the first frame update
@@ -102,6 +102,22 @@ public class Carrier : MonoBehaviour
         {
             animator.SetBool("IsAlerted", false);
         }
+        if(HasBlinked)
+        {
+            animator.SetBool("IsBlinked", true);
+        }
+        else
+        {
+            animator.SetBool("IsBlinked", false);
+        }
 
+    }
+    public void AnimEventAlertBlinkOffc(string message)
+    {
+        if (message.Equals("BlinkAnimationOver") && HasBlinked)
+        {
+            HasBlinked = false;
+            // Do other things based on an attack ending.
+        }
     }
 }
