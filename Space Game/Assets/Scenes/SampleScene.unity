@@ -1151,6 +1151,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6585033137052432482, guid: 95e6070f8ab7254449cfee59083b1119,
+        type: 3}
+      propertyPath: m_Name
+      value: enemy_patrolling
+      objectReference: {fileID: 0}
     - target: {fileID: 6585033137147797977, guid: 95e6070f8ab7254449cfee59083b1119,
         type: 3}
       propertyPath: m_RootOrder
@@ -2946,6 +2951,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1032735175052140514, guid: 8c7cae6cf609de244aab2b0d628f91c2,
+        type: 3}
+      propertyPath: m_Name
+      value: enemy_stationary
+      objectReference: {fileID: 0}
     - target: {fileID: 2190535762065063637, guid: 8c7cae6cf609de244aab2b0d628f91c2,
         type: 3}
       propertyPath: waypoints.Array.data[0]
@@ -2961,6 +2971,12 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[2]
       value: 
       objectReference: {fileID: 1794112946}
+    - target: {fileID: 3375733692317199966, guid: 8c7cae6cf609de244aab2b0d628f91c2,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4375981259033190578, guid: 5684b89140e838f4aa72b7da0cb86620,
+        type: 3}
     - target: {fileID: 5067101833535026623, guid: 8c7cae6cf609de244aab2b0d628f91c2,
         type: 3}
       propertyPath: _boundGraphObjectReferences.Array.data[1]

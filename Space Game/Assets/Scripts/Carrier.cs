@@ -16,6 +16,8 @@ public class Carrier : MonoBehaviour
     public Rigidbody2D rb;
     public float acceleration, maxSpeed, waypointBuffer;
 
+    public Animator animator;
+
     [HideInInspector] public GameObject player;
 
     // Start is called before the first frame update
@@ -28,6 +30,7 @@ public class Carrier : MonoBehaviour
     void Update()
     {
         Detect();
+        HandleAnimation();
     }
 
     public void Detect()
@@ -87,6 +90,18 @@ public class Carrier : MonoBehaviour
 
     public void SpawnMinion()
     {
+
+    }
+    public void HandleAnimation()
+    {
+        if(isPlayerInSight)
+        {
+            animator.SetBool("IsAlerted", true);
+        }
+        else
+        {
+            animator.SetBool("IsAlerted", false);
+        }
 
     }
 }

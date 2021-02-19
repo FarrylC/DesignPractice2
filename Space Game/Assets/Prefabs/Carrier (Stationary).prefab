@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9167229180137637262}
   - component: {fileID: 3375733692317199966}
+  - component: {fileID: 1261594045309708651}
   m_Layer: 0
   m_Name: sprite_enemy_temp
   m_TagString: Untagged
@@ -81,6 +82,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1261594045309708651
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032735175052140514}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 35678776c179d724596812254e5c6cb9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5277571887871950309
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,6 +229,7 @@ MonoBehaviour:
   acceleration: 0.2
   maxSpeed: 3
   waypointBuffer: 1
+  animator: {fileID: 1261594045309708651}
   player: {fileID: 0}
 --- !u!50 &1611219383527056587
 Rigidbody2D:
