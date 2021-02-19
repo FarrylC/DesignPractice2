@@ -17,6 +17,7 @@ public class Carrier : MonoBehaviour
     public float acceleration, maxSpeed, waypointBuffer;
 
     public Animator animator;
+    [Range(0.1f, 2f)] public float blinkSpeed = 1;
     public bool HasBlinked;
     [HideInInspector] public GameObject player;
 
@@ -94,7 +95,9 @@ public class Carrier : MonoBehaviour
     }
     public void HandleAnimation()
     {
-        if(isPlayerInSight)
+        animator.SetFloat("blinkSpeed", blinkSpeed);
+
+        if (isPlayerInSight)
         {
             animator.SetBool("IsAlerted", true);
         }
@@ -114,10 +117,21 @@ public class Carrier : MonoBehaviour
     }
     public void AnimEventAlertBlinkOffc(string message)
     {
-        if (message.Equals("BlinkAnimationOver") && HasBlinked)
+        if(message.Equals("EyeShut") && HasBlinked)
+        {
+            animator.speed = 0;
+            StartCoroutine(PauseToOpenEye());
+
+        }
+        if(message.Equals("BlinkAnimationOver") && HasBlinked)
         {
             HasBlinked = false;
-            // Do other things based on an attack ending.
         }
+    }
+    IEnumerator PauseToOpenEye()
+    {
+        animator.speed = 0;
+        yield return new WaitForSeconds(blinkSpeed);
+        animator.speed = 1;
     }
 }
