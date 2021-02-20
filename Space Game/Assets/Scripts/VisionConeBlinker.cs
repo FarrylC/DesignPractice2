@@ -6,12 +6,15 @@ public class VisionConeBlinker : MonoBehaviour
 {
     // Start is called before the first frame update
     SpriteRenderer sr;
+    private Carrier carrierScript;
+    private GameObject Carrier;
     public Color visionIdleColor;
     public Color visionAlertColor;
-    public bool test;
     void Start()
     {
         sr = gameObject.GetComponent<SpriteRenderer>();
+
+        carrierScript = GetComponentInParent<Carrier>();
 
         
     }
@@ -23,16 +26,13 @@ public class VisionConeBlinker : MonoBehaviour
     }
     void SetColor()
     {
-    
-
-        if(test)
+        if(this.carrierScript.isPlayerInSight)
         {
-            sr.color = visionAlertColor;
+            this.sr.color = visionAlertColor;
         }
         else
         {
-            sr.color = visionIdleColor;
+            this.sr.color = visionIdleColor;
         }
-        
     }
 }

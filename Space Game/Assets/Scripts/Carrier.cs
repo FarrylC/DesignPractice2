@@ -18,6 +18,7 @@ public class Carrier : MonoBehaviour
 
     public Animator enemyAnimator;
     private Animator visionAnimator;
+    private SpriteRenderer spriteRenderer;
     [Range(0.1f, 2f)] public float blinkSpeed = 1;
     public bool HasBlinked;
     [HideInInspector] public GameObject player;
@@ -26,6 +27,8 @@ public class Carrier : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        if(type == CarrierType.Patrol)
+            spriteRenderer = transform.Find("vision_cone").GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -144,7 +147,7 @@ public class Carrier : MonoBehaviour
     //This is called from teh Redirector script on the enemy's sprite child
     public void AnimEventAlertBlinkOff(string message)
     {
-        if(visionAnimator == null)
+        if(type == CarrierType.Stationary &&  visionAnimator == null)
         {
             throw new System.Exception("Can't find vision_cone_animated Animator in the prefab");
         }
@@ -155,6 +158,10 @@ public class Carrier : MonoBehaviour
             if(visionAnimator)
                 visionAnimator.speed = 0;
             enemyAnimator.speed = 0;
+            if(type == CarrierType.Patrol)
+            {
+                spriteRenderer.enabled = false;
+            }
             //waits a few seconds before opening it again
             StartCoroutine(PauseToOpenEye(visionAnimator));
             //plays rest of blink animation
@@ -175,5 +182,9 @@ public class Carrier : MonoBehaviour
         enemyAnimator.speed = 1;
         if (type == CarrierType.Stationary)
             visionAnim.speed = 1;
+        if(type == CarrierType.Patrol)
+        {
+            spriteRenderer.enabled = true;
+        }
     }
 }
