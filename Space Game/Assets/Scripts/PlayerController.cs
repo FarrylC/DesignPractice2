@@ -166,7 +166,6 @@ public class PlayerController : MonoBehaviour
     //Called via PlayerHeatlh Script using a SendMessage
     private void KnockBack()
     {
-        Debug.Log("Knocked");
         rb.AddForce(-transform.up * knockBackForce, ForceMode2D.Impulse);
         rb.angularVelocity = 0;
         
