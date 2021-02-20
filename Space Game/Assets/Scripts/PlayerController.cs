@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public float rotationSpeed; // Degrees per second
 
 
+
     public Rigidbody2D rb;
     Vector2 input;
 
@@ -191,17 +192,6 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("not_moving_y", false);
         }
-
-        //When Player is hurt
-        /*if(gameObject.GetComponent<PlayerHealth>().IsDamaged == true)
-        {
-            StartCoroutine(PlayerDamaged());
-        }*/
-       /* else
-        {
-            Debug.Log("HELLO");
-            spriteRenderer.color = Color.white;
-        }*/
     }
 
     // Handles player SFX
@@ -355,10 +345,4 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    IEnumerator PlayerDamaged()
-    {
-        spriteRenderer.color = Color.red;
-        yield return new WaitForSeconds(1f);
-        spriteRenderer.color = Color.white;
-    }
 }

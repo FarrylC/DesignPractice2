@@ -9,6 +9,7 @@ public class PlayerHealth : MonoBehaviour
     public int health;
 
     public Rigidbody2D rb;
+    private SpriteRenderer spriteRenderer;
 
     public Slider healthBar;
 
@@ -21,6 +22,9 @@ public class PlayerHealth : MonoBehaviour
     {
         setHealth(maxHealth);
 
+        if (!GameObject.Find("Sprite").gameObject.GetComponent<SpriteRenderer>())
+            throw new System.Exception("Can't find Sprite Game Object or its missing a Sprite Renderer");
+        spriteRenderer = GameObject.Find("Sprite").gameObject.GetComponent<SpriteRenderer>();
         //Set start value of health bar
         healthBar.maxValue = maxHealth;
         healthBar.value = maxHealth;
@@ -61,7 +65,7 @@ public class PlayerHealth : MonoBehaviour
             if (!_isInvincible)
             {
                 _damaged = true;
-                
+                StartCoroutine(ColorShiftPlayerDamaged());
                 setHealth(health - 1);
 
                 SetInvincible();
@@ -76,9 +80,8 @@ public class PlayerHealth : MonoBehaviour
             if (!_isInvincible)
             {
                 _damaged = true;
-
+                StartCoroutine(ColorShiftPlayerDamaged());
                 setHealth(health - 1);
-
                 SetInvincible();
             }
         }
@@ -91,7 +94,7 @@ public class PlayerHealth : MonoBehaviour
             if (!_isInvincible)
             {
                 _damaged = true;
-
+                StartCoroutine(ColorShiftPlayerDamaged());
                 setHealth(health - 1);
 
                 SetInvincible();
@@ -114,6 +117,14 @@ public class PlayerHealth : MonoBehaviour
     void SetDamageable()
     {
         _isInvincible = false;
+        _damaged = false;
+    }
+
+    IEnumerator ColorShiftPlayerDamaged()
+    {
+        spriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.5f);
+        spriteRenderer.color = Color.white;
     }
 
 }

@@ -132,7 +132,7 @@ public class Carrier : MonoBehaviour
             {
                 throw new System.Exception("Can't find vision_cone_animated Animator in the prefab");
             }
-            else;
+            else
             {
                 visionAnimator = transform.Find("vision_cone_animated").GetComponent<Animator>();
             }
