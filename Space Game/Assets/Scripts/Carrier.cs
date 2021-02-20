@@ -16,7 +16,8 @@ public class Carrier : MonoBehaviour
     public Rigidbody2D rb;
     public float acceleration, maxSpeed, waypointBuffer;
 
-    public Animator animator;
+    public Animator enemyAnimator;
+    private Animator visionAnimator;
     [Range(0.1f, 2f)] public float blinkSpeed = 1;
     public bool HasBlinked;
     [HideInInspector] public GameObject player;
@@ -33,7 +34,6 @@ public class Carrier : MonoBehaviour
         Detect();
         HandleAnimation();
 
-        //DrawVisionCone();
     }
 
     public void Detect()
@@ -97,36 +97,66 @@ public class Carrier : MonoBehaviour
     }
     public void HandleAnimation()
     {
-        animator.SetFloat("blinkSpeed", blinkSpeed);
+
+      
+        if(type == CarrierType.Stationary)
+        {
+            if (transform.Find("vision_cone_animated").GetComponent<Animator>() == null)
+            {
+                throw new System.Exception("Can't find vision_cone_animated Animator in the prefab");
+            }
+            else;
+            {
+                visionAnimator = transform.Find("vision_cone_animated").GetComponent<Animator>();
+            }
+        }
+
+        if(type == CarrierType.Stationary)
+            visionAnimator.SetFloat("blinkSpeed", blinkSpeed);
+        enemyAnimator.SetFloat("blinkSpeed", blinkSpeed);
 
         if (isPlayerInSight)
         {
-            animator.SetBool("IsAlerted", true);
+            enemyAnimator.SetBool("IsAlerted", true);
         }
         else
         {
-            animator.SetBool("IsAlerted", false);
+            enemyAnimator.SetBool("IsAlerted", false);
         }
         if(HasBlinked)
         {
-            animator.SetBool("IsBlinked", true);
+            enemyAnimator.SetBool("IsBlinked", true);
+            if (type == CarrierType.Stationary)
+            {
+                visionAnimator.SetBool("IsBlinked", true);
+            }
         }
         else
         {
-            animator.SetBool("IsBlinked", false);
+            enemyAnimator.SetBool("IsBlinked", false);
+            if (type == CarrierType.Stationary)
+            {
+                visionAnimator.SetBool("IsBlinked", false);
+            }
         }
 
     }
     //This is called from teh Redirector script on the enemy's sprite child
-    public void AnimEventAlertBlinkOffc(string message)
+    public void AnimEventAlertBlinkOff(string message)
     {
+        if(visionAnimator == null)
+        {
+            throw new System.Exception("Can't find vision_cone_animated Animator in the prefab");
+        }
         //Activated via the EyeShut animation Event when it gets to fully closed 
         if(message.Equals("EyeShut") && HasBlinked)
         {
             //makes it so that animation stops when eyes closed
-            animator.speed = 0;
+            if(visionAnimator)
+                visionAnimator.speed = 0;
+            enemyAnimator.speed = 0;
             //waits a few seconds before opening it again
-            StartCoroutine(PauseToOpenEye());
+            StartCoroutine(PauseToOpenEye(visionAnimator));
             //plays rest of blink animation
 
         }
@@ -136,16 +166,14 @@ public class Carrier : MonoBehaviour
             HasBlinked = false;
         }
     }
-    IEnumerator PauseToOpenEye()
+    IEnumerator PauseToOpenEye(Animator visionAnim)
     {
-        animator.speed = 0;
+        enemyAnimator.speed = 0;
+        if (type == CarrierType.Stationary)
+            visionAnim.speed = 0;
         yield return new WaitForSeconds(blinkSpeed);
-        animator.speed = 1;
-    }
-    private void DrawVisionCone()
-    {
-        Debug.DrawRay(transform.position, transform.up, Color.red, visionRange * 20);
-        Debug.DrawRay(transform.position, new Vector2(Mathf.Sin(visionRange), Mathf.Cos(visionAngle)), Color.green, visionRange);
-        Debug.DrawRay(transform.position, new Vector2(Mathf.Sin(-visionRange), Mathf.Cos(-visionAngle)), Color.green, visionRange);
+        enemyAnimator.speed = 1;
+        if (type == CarrierType.Stationary)
+            visionAnim.speed = 1;
     }
 }

@@ -244,7 +244,8 @@ MonoBehaviour:
   acceleration: 0.2
   maxSpeed: 3
   waypointBuffer: 1
-  animator: {fileID: 1740596575483241624}
+  enemyAnimator: {fileID: 1740596575483241624}
+  blinkSpeed: 1
   HasBlinked: 0
   player: {fileID: 0}
 --- !u!50 &6585033137147797979

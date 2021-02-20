@@ -14,8 +14,8 @@ public class Redirector : MonoBehaviour
     }
 
     // and now call this from the AnimationEvent
-    public void DoIt(string message)
+    public void DoIt(string message)//Sends to Carrier Script
     {
-        carrierScript.AnimEventAlertBlinkOffc(message);
+        carrierScript.AnimEventAlertBlinkOff(message);
     }
 }

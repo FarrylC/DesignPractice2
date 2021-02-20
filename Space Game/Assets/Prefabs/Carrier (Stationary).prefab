@@ -245,7 +245,7 @@ MonoBehaviour:
   acceleration: 0.2
   maxSpeed: 3
   waypointBuffer: 1
-  animator: {fileID: 1474308108695379831}
+  enemyAnimator: {fileID: 1474308108695379831}
   blinkSpeed: 1
   HasBlinked: 0
   player: {fileID: 0}
@@ -363,7 +363,7 @@ Animator:
   m_GameObject: {fileID: 6306711303410667493}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b021c58d40e0d144ab58ad08a78f87dd, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
