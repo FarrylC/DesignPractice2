@@ -130,12 +130,8 @@ GameObject:
   - component: {fileID: 6585033137147797978}
   - component: {fileID: 6585033137147797979}
   m_Layer: 0
-  m_Name: Carrier (Patrol)
-<<<<<<< HEAD
+  m_Name: Carrier (Patrol)_BASE_538
   m_TagString: Enemy
-=======
-  m_TagString: Untagged
->>>>>>> EnemyAnimations
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -180,8 +176,8 @@ MonoBehaviour:
     _version: 3.16
     _category: 
     _comments: 
-    _translation: {x: 331, y: 368}
-    _zoomFactor: 0.75124776
+    _translation: {x: 21, y: 21}
+    _zoomFactor: 1
   _firstActivation: 0
   _enableAction: 0
   _disableAction: 0
@@ -292,6 +288,7 @@ GameObject:
   m_Component:
   - component: {fileID: 894047740569734868}
   - component: {fileID: 1380849437990313749}
+  - component: {fileID: 7349980941248596692}
   m_Layer: 0
   m_Name: vision_cone
   m_TagString: Untagged
@@ -363,3 +360,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7349980941248596692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7021913768776001057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aaa4016c63b8934ca2c692b396d3ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visionIdleColor: {r: 0.972549, g: 0.78431374, b: 0.4, a: 1}
+  visionAlertColor: {r: 0.8980392, g: 0.25882354, b: 0.25882354, a: 1}
