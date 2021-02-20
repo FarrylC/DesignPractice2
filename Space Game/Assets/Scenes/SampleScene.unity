@@ -1771,6 +1771,11 @@ PrefabInstance:
       objectReference: {fileID: 2019760716}
     - target: {fileID: 6585033137147797978, guid: 95e6070f8ab7254449cfee59083b1119,
         type: 3}
+      propertyPath: visionAngle
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6585033137147797978, guid: 95e6070f8ab7254449cfee59083b1119,
+        type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
       objectReference: {fileID: 763569233}
@@ -1803,6 +1808,11 @@ PrefabInstance:
       propertyPath: redBoarder
       value: 
       objectReference: {fileID: 2019760716}
+    - target: {fileID: 2190535762065063637, guid: ea3ddd291827f9f4c91e5666345d8118,
+        type: 3}
+      propertyPath: visionAngle
+      value: 45
+      objectReference: {fileID: 0}
     - target: {fileID: 5533355883437427705, guid: ea3ddd291827f9f4c91e5666345d8118,
         type: 3}
       propertyPath: m_Name
@@ -1927,7 +1937,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc1fc01f7cabee41963b7606fbab11d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 732436993}
+  redBorder: {fileID: 2019760716}
 --- !u!4 &1672701728
 Transform:
   m_ObjectHideFlags: 0

@@ -67,6 +67,7 @@ public class PlayerController : MonoBehaviour
         input = GameController.GetPlayerInput();
         HandleMovement();
         HandleAnimation();
+        HandleSFX();
     }
 
 
@@ -99,6 +100,55 @@ public class PlayerController : MonoBehaviour
         if (input.y == 0)
             rb.velocity *= 1 - (Time.deltaTime / Mathf.Pow(DecelerationTime, 2));
 
+    }
+
+    //Handle Knocback when hitting asteroids
+    //Called via PlayerHeatlh Script using a SendMessage
+    private void KnockBack()
+    {
+        rb.AddForce(-transform.up * knockBackForce, ForceMode2D.Impulse);
+        rb.angularVelocity = 0;
+        
+    }
+
+    // Handles player sprite animation
+    public void HandleAnimation()
+    {
+        animator.SetInteger("direction_y", (int)input.y);
+
+        //Turning while not moving
+        animator.SetInteger("direction_x", (int)input.x);
+
+        if(input.x > 0)
+        {
+             spriteRenderer.flipX = true; 
+        }
+        else
+        {
+            spriteRenderer.flipX = false;
+        }
+        //Not_moving transition accelerating back to idle
+        if (input.x == 0)
+        {
+            animator.SetBool("not_moving_x", true);
+        }else
+        {
+            animator.SetBool("not_moving_x", false);
+        }
+
+        if (input.y == 0)
+        {
+            animator.SetBool("not_moving_y", true);
+        }
+        else
+        {
+            animator.SetBool("not_moving_y", false);
+        }
+    }
+
+    // Handles player SFX
+    public void HandleSFX()
+    {
         //check if the player is accelerating and if the acceleration_sfx is NOT playing before play
         if (Input.GetKeyDown(KeyCode.W))
         {
@@ -156,57 +206,9 @@ public class PlayerController : MonoBehaviour
             l_mot = false;
             l_dec = true;
             Spaceship_SFX();
-        }    
-
-        
-
-    }
-
-    //Handle Knocback when hitting asteroids
-    //Called via PlayerHeatlh Script using a SendMessage
-    private void KnockBack()
-    {
-        rb.AddForce(-transform.up * knockBackForce, ForceMode2D.Impulse);
-        rb.angularVelocity = 0;
-        
-    }
-
-    // Handles player sprite animation
-    public void HandleAnimation()
-    {
-        animator.SetInteger("direction_y", (int)input.y);
-
-        //Turning while not moving
-        animator.SetInteger("direction_x", (int)input.x);
-
-        if(input.x > 0)
-        {
-             spriteRenderer.flipX = true; 
-        }
-        else
-        {
-            spriteRenderer.flipX = false;
-        }
-        //Not_moving transition accelerating back to idle
-        if (input.x == 0)
-        {
-            animator.SetBool("not_moving_x", true);
-        }else
-        {
-            animator.SetBool("not_moving_x", false);
-        }
-
-        if (input.y == 0)
-        {
-            animator.SetBool("not_moving_y", true);
-        }
-        else
-        {
-            animator.SetBool("not_moving_y", false);
         }
     }
 
-    // Handles player SFX
     #region SoundFX Be careful to NOT add things into this region but outside of it
     public void Spaceship_SFX()
     {

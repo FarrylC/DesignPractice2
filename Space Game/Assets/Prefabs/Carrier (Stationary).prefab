@@ -146,6 +146,36 @@ Transform:
   m_Father: {fileID: 5887831509682833219}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5492734538852959109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4513647464395287291}
+  m_Layer: 0
+  m_Name: eyePos
+  m_TagString: Untagged
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4513647464395287291
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5492734538852959109}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.57, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5887831509682833219}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5533355883437427705
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,12 +204,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5533355883437427705}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.24, y: -6.74, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6306711303410667490}
   - {fileID: 8849384353472050066}
   - {fileID: 7513373484723558047}
+  - {fileID: 4513647464395287291}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -196,7 +227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _serializedExposedParameters: []
-  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"boolVariable":{"_name":"isPlayerInSight","_targetVariableID":"90aaa448-5af9-4f72-8a59-9b960f47e831"},"setTo":0,"$type":"NodeCanvas.Tasks.Actions.SetBoolean"},{"method":{"_baseInfo":"Carrier|Patrol|System.Void","_paramsInfo":""},"parameters":[],"returnValue":{},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction_Multiplatform"}]},"_repeatStateActions":true,"_name":"Patrolling","_position":{"x":61.57098,"y":23.86664},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"boolVariable":{"_name":"isPlayerInSight","_targetVariableID":"90aaa448-5af9-4f72-8a59-9b960f47e831"},"$type":"NodeCanvas.Tasks.Actions.SetBoolean"},{"method":{"_baseInfo":"Carrier|Chase|System.Void","_paramsInfo":""},"parameters":[],"returnValue":{},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction_Multiplatform"},{"valueA":{"_name":"currentCooldown","_targetVariableID":"337b6581-8b2b-456b-944b-1448d9d6aaa9"},"Operation":2,"valueB":{"_value":1.0},"perSecond":true,"$type":"NodeCanvas.Tasks.Actions.SetFloat"},{"valueA":{"_name":"spawnedMinions","_targetVariableID":"78f6464f-3a48-4106-988a-0f212474c426"},"valueB":{},"$type":"NodeCanvas.Tasks.Actions.SetInt"}]},"_repeatStateActions":true,"_name":"Chasing","_position":{"x":1100.0,"y":249.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"actions":[{"method":{"_baseInfo":"Carrier|SpawnMinion|System.Void","_paramsInfo":""},"parameters":[],"returnValue":{},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction_Multiplatform"},{"waitTime":{"_value":0.1},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"valueA":{"_name":"spawnedMinions","_targetVariableID":"78f6464f-3a48-4106-988a-0f212474c426"},"Operation":1,"valueB":{"_value":1},"$type":"NodeCanvas.Tasks.Actions.SetInt"}]},"_repeatStateActions":true,"_name":"Spawning
+  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"method":{"_baseInfo":"Carrier|Patrol|System.Void","_paramsInfo":""},"parameters":[],"returnValue":{},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction_Multiplatform"}]},"_repeatStateActions":true,"_name":"Patrolling","_position":{"x":61.57098,"y":23.86664},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"method":{"_baseInfo":"Carrier|Chase|System.Void","_paramsInfo":""},"parameters":[],"returnValue":{},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction_Multiplatform"},{"valueA":{"_name":"currentCooldown","_targetVariableID":"337b6581-8b2b-456b-944b-1448d9d6aaa9"},"Operation":2,"valueB":{"_value":1.0},"perSecond":true,"$type":"NodeCanvas.Tasks.Actions.SetFloat"},{"valueA":{"_name":"spawnedMinions","_targetVariableID":"78f6464f-3a48-4106-988a-0f212474c426"},"valueB":{},"$type":"NodeCanvas.Tasks.Actions.SetInt"}]},"_repeatStateActions":true,"_name":"Chasing","_position":{"x":1100.0,"y":249.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"actions":[{"method":{"_baseInfo":"Carrier|SpawnMinion|System.Void","_paramsInfo":""},"parameters":[],"returnValue":{},"$type":"NodeCanvas.Tasks.Actions.ExecuteFunction_Multiplatform"},{"waitTime":{"_value":0.1},"$type":"NodeCanvas.Tasks.Actions.Wait"},{"valueA":{"_name":"spawnedMinions","_targetVariableID":"78f6464f-3a48-4106-988a-0f212474c426"},"Operation":1,"valueB":{"_value":1},"$type":"NodeCanvas.Tasks.Actions.SetInt"}]},"_repeatStateActions":true,"_name":"Spawning
     Minions","_position":{"x":361.1937,"y":588.3754},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"},{"_actionList":{"executionMode":1,"actions":[{"valueA":{"_name":"currentCooldown","_targetVariableID":"337b6581-8b2b-456b-944b-1448d9d6aaa9"},"valueB":{"_name":"cooldownTime","_targetVariableID":"618d53c8-cdb0-4e53-96e6-69190a0f1f7b"},"$type":"NodeCanvas.Tasks.Actions.SetFloat"}]},"_name":"Cooling
     Down","_position":{"x":790.8858,"y":491.4435},"$type":"NodeCanvas.StateMachines.ActionState","$id":"3"}],"connections":[{"_condition":{"valueA":{"_name":"isPlayerInSight","_targetVariableID":"90aaa448-5af9-4f72-8a59-9b960f47e831"},"valueB":{"_value":true},"$type":"NodeCanvas.Tasks.Conditions.CheckBoolean"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"valueA":{"_name":"isPlayerInSight","_targetVariableID":"90aaa448-5af9-4f72-8a59-9b960f47e831"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckBoolean"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"isPlayerInRange","_targetVariableID":"7feb80ae-8907-4ec3-b262-73d913710ee6"},"valueB":{"_value":true},"$type":"NodeCanvas.Tasks.Conditions.CheckBoolean"},{"valueA":{"_name":"currentCooldown","_targetVariableID":"337b6581-8b2b-456b-944b-1448d9d6aaa9"},"checkType":4,"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckFloat"},{"valueA":{"_name":"spawnedMinions","_targetVariableID":"78f6464f-3a48-4106-988a-0f212474c426"},"checkType":4,"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckInt"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"checkMode":1,"conditions":[{"valueA":{"_name":"isPlayerInRange","_targetVariableID":"7feb80ae-8907-4ec3-b262-73d913710ee6"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckBoolean"},{"valueA":{"_name":"spawnedMinions","_targetVariableID":"78f6464f-3a48-4106-988a-0f212474c426"},"checkType":3,"valueB":{"_name":"spawnableMinions","_targetVariableID":"1508ae45-bdde-482e-8d78-5a1bc8d6cff8"},"$type":"NodeCanvas.Tasks.Conditions.CheckInt"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"valueA":{"_name":"isPlayerInSight","_targetVariableID":"90aaa448-5af9-4f72-8a59-9b960f47e831"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckBoolean"},{"valueA":{"_name":"isPlayerInRange","_targetVariableID":"7feb80ae-8907-4ec3-b262-73d913710ee6"},"valueB":{},"$type":"NodeCanvas.Tasks.Conditions.CheckBoolean"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{"Player":{"_name":"Player","_id":"f70c04d9-3e67-4992-b18a-2604b7e5946d","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
     UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"spawnedMinions":{"_propertyPath":"Carrier.spawnedMinions","_name":"spawnedMinions","_id":"78f6464f-3a48-4106-988a-0f212474c426","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
@@ -292,12 +323,13 @@ MonoBehaviour:
   spawnableMinions: 5
   redBoarder: {fileID: 0}
   visionRange: 5
-  visionAngle: 30
+  visionAngle: 45
   spawnRange: 4
   isPlayerInSight: 0
   isPlayerInRange: 0
   cooldownTime: 5
   currentCooldown: 0
+  eyePos: {fileID: 5492734538852959109}
   waypoints:
   - {fileID: 0}
   - {fileID: 0}

@@ -18,6 +18,7 @@ public class Carrier : MonoBehaviour
     [HideInInspector] public bool isPlayerInSight, isPlayerInRange;
     public float cooldownTime;
     public float currentCooldown;
+    public GameObject eyePos;
 
     private int currentWaypoint = 0;
     public List<GameObject> waypoints = new List<GameObject>();
@@ -49,16 +50,33 @@ public class Carrier : MonoBehaviour
 
     public void Detect()
     {
-        redBoarder.SetActive(true);
-
         // Check if the player is within vision range
-        if (Vector2.Distance(transform.position, player.transform.position) < visionRange && Vector2.Angle(transform.position, player.transform.position) <= visionAngle)
+        Vector2 distanceToPlayer = player.transform.position - eyePos.transform.position;
+        if (distanceToPlayer.magnitude < visionRange && Vector2.Angle(eyePos.transform.up, distanceToPlayer) <= visionAngle)
+        {
+            // If the player is already detected, do nothing
+            if (isPlayerInSight)
+                return;
+
             isPlayerInSight = true;
+
+            // Increment detect count
+            GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>().IncrementDetectCount();
+        }
         else
+        {
+            // If the player is already out of sight, do nothing
+            if (!isPlayerInSight)
+                return;
+
             isPlayerInSight = false;
 
+            // Decrement detect count
+            GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>().DecrementDetectCount();
+        }
+
         // Check if the player is within minion spawn range
-        if (Vector2.Distance(transform.position, player.transform.position) < spawnRange)
+        if (Vector2.Distance(eyePos.transform.position, player.transform.position) < spawnRange)
         { 
             isPlayerInRange = true;
         }     
@@ -67,9 +85,7 @@ public class Carrier : MonoBehaviour
     }
 
     public void Patrol()
-    {
-        redBoarder.SetActive(false);
-        
+    {        
         // Only patrol if the carrier is a patrol type
         if (type != CarrierType.Patrol)
             return;
