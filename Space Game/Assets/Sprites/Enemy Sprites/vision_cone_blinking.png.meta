@@ -1,0 +1,1352 @@
+fileFormatVersion: 2
+guid: 7f28d10ce3e6d4f4eb92faffa1fe2dae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2051976862839322264
+    second: vision_cone_blinking_1
+  - first:
+      213: -4416256808351642023
+    second: vision_cone_blinking_2
+  - first:
+      213: -350769148143298669
+    second: vision_cone_blinking_3
+  - first:
+      213: 2085361596781818987
+    second: vision_cone_blinking_4
+  - first:
+      213: 6236961846331893264
+    second: vision_cone_blinking_5
+  - first:
+      213: 7093159741403609202
+    second: vision_cone_blinking_6
+  - first:
+      213: -3339888183338118317
+    second: vision_cone_blinking_7
+  - first:
+      213: -3966202588240963161
+    second: vision_cone_blinking_8
+  - first:
+      213: 1301490020049332521
+    second: vision_cone_blinking_9
+  - first:
+      213: 6938079741694549341
+    second: vision_cone_blinking_10
+  - first:
+      213: 8552212719206169546
+    second: vision_cone_blinking_11
+  - first:
+      213: 8184899881170141297
+    second: vision_cone_blinking_12
+  - first:
+      213: 8284201886383634175
+    second: vision_cone_blinking_13
+  - first:
+      213: 147647290373450871
+    second: vision_cone_blinking_14
+  - first:
+      213: 692521264088208411
+    second: vision_cone_blinking_15
+  - first:
+      213: 6029760836962248014
+    second: vision_cone_blinking_16
+  - first:
+      213: -4476916347238772369
+    second: vision_cone_blinking_17
+  - first:
+      213: -2799431942862886695
+    second: vision_cone_blinking_18
+  - first:
+      213: -464864033237521607
+    second: vision_cone_blinking_19
+  - first:
+      213: 3684206630160948445
+    second: vision_cone_blinking_20
+  - first:
+      213: -7862323955738488974
+    second: vision_cone_blinking_21
+  - first:
+      213: 6837836330260807926
+    second: vision_cone_blinking_22
+  - first:
+      213: -6382072449655201977
+    second: vision_cone_blinking_23
+  - first:
+      213: 6604730724944401055
+    second: vision_cone_blinking_24
+  - first:
+      213: -7594257559989409418
+    second: vision_cone_blinking_25
+  - first:
+      213: 5131204118332666789
+    second: vision_cone_blinking_26
+  - first:
+      213: 8933174901862292409
+    second: vision_cone_blinking_27
+  - first:
+      213: -5419270713314475465
+    second: vision_cone_blinking_28
+  - first:
+      213: -3101206718805794927
+    second: vision_cone_blinking_29
+  - first:
+      213: -7362909127266883462
+    second: vision_cone_blinking_30
+  - first:
+      213: -7231624101943608579
+    second: vision_cone_blinking_31
+  - first:
+      213: 6042994157687049607
+    second: vision_cone_blinking_32
+  - first:
+      213: 4218625680534901309
+    second: vision_cone_blinking_33
+  - first:
+      213: 2870714763552963362
+    second: vision_cone_blinking_34
+  - first:
+      213: 6390875258018801151
+    second: vision_cone_blinking_35
+  - first:
+      213: -4197040701364102348
+    second: vision_cone_blinking_36
+  - first:
+      213: 5734236720042093086
+    second: vision_cone_blinking_37
+  - first:
+      213: 7575780484713922855
+    second: vision_cone_blinking_38
+  - first:
+      213: -3029630229937002930
+    second: vision_cone_blinking_39
+  - first:
+      213: -4241404218103866464
+    second: vision_cone_blinking_40
+  - first:
+      213: -6239573522094053569
+    second: vision_cone_blinking_41
+  - first:
+      213: 7458867013919253628
+    second: vision_cone_blinking_42
+  - first:
+      213: 9147869158064464847
+    second: vision_cone_blinking_43
+  - first:
+      213: 6518774851246564320
+    second: vision_cone_blinking_44
+  - first:
+      213: -5105264416594686659
+    second: vision_cone_blinking_45
+  - first:
+      213: -1989458686086899251
+    second: vision_cone_blinking_46
+  - first:
+      213: -1137470108114012976
+    second: vision_cone_blinking_47
+  - first:
+      213: 6752753226434001129
+    second: vision_cone_blinking_0
+  - first:
+      213: -2339480459536958182
+    second: vision_cone_blinking_48
+  - first:
+      213: -7096190701187118170
+    second: vision_cone_blinking_49
+  - first:
+      213: -3031724860426214348
+    second: vision_cone_blinking_50
+  - first:
+      213: -7988284347271397073
+    second: vision_cone_blinking_51
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vision_cone_blinking_1
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 3
+        width: 624
+        height: 420
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896bbdcb5161a7c10800000000000000
+      internalID: 2051976862839322264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_2
+      rect:
+        serializedVersion: 2
+        x: 2134
+        y: 411
+        width: 12
+        height: 11
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ecc45c4dd46b2c0800000000000000
+      internalID: -4416256808351642023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_3
+      rect:
+        serializedVersion: 2
+        x: 2139
+        y: 3
+        width: 571
+        height: 420
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39790c67151d12bf0800000000000000
+      internalID: -350769148143298669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_4
+      rect:
+        serializedVersion: 2
+        x: 2707
+        y: 411
+        width: 7
+        height: 12
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64fb64d251b0fc10800000000000000
+      internalID: 2085361596781818987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_5
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 412
+        width: 10
+        height: 11
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 016e64021c32e8650800000000000000
+      internalID: 6236961846331893264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_6
+      rect:
+        serializedVersion: 2
+        x: 2733
+        y: 3
+        width: 522
+        height: 419
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278b6712437ff6260800000000000000
+      internalID: 7093159741403609202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_7
+      rect:
+        serializedVersion: 2
+        x: 3251
+        y: 410
+        width: 12
+        height: 15
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3535b9a846556a1d0800000000000000
+      internalID: -3339888183338118317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_8
+      rect:
+        serializedVersion: 2
+        x: 3256
+        y: 3
+        width: 483
+        height: 420
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a999a482c735f8c0800000000000000
+      internalID: -3966202588240963161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_9
+      rect:
+        serializedVersion: 2
+        x: 3736
+        y: 411
+        width: 7
+        height: 12
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 929a1c31742df0210800000000000000
+      internalID: 1301490020049332521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_10
+      rect:
+        serializedVersion: 2
+        x: 3774
+        y: 411
+        width: 8
+        height: 11
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d990bf3c2094060800000000000000
+      internalID: 6938079741694549341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_11
+      rect:
+        serializedVersion: 2
+        x: 3778
+        y: 3
+        width: 439
+        height: 420
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb7cd318209fa670800000000000000
+      internalID: 8552212719206169546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_12
+      rect:
+        serializedVersion: 2
+        x: 4214
+        y: 411
+        width: 14
+        height: 13
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1708843931b969170800000000000000
+      internalID: 8184899881170141297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_13
+      rect:
+        serializedVersion: 2
+        x: 4612
+        y: 412
+        width: 11
+        height: 11
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6748d59b567f270800000000000000
+      internalID: 8284201886383634175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_14
+      rect:
+        serializedVersion: 2
+        x: 4640
+        y: 412
+        width: 10
+        height: 11
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c22c6ad6c8c0200800000000000000
+      internalID: 147647290373450871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_15
+      rect:
+        serializedVersion: 2
+        x: 4643
+        y: 3
+        width: 351
+        height: 420
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b14d169ab645c9900800000000000000
+      internalID: 692521264088208411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_16
+      rect:
+        serializedVersion: 2
+        x: 4986
+        y: 412
+        width: 11
+        height: 11
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4562bfb8830ea350800000000000000
+      internalID: 6029760836962248014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_17
+      rect:
+        serializedVersion: 2
+        x: 5019
+        y: 412
+        width: 11
+        height: 11
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6191b94d4cced1c0800000000000000
+      internalID: -4476916347238772369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_18
+      rect:
+        serializedVersion: 2
+        x: 5020
+        y: 3
+        width: 288
+        height: 420
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d8a6c0ea7b6629d0800000000000000
+      internalID: -2799431942862886695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_19
+      rect:
+        serializedVersion: 2
+        x: 5300
+        y: 412
+        width: 10
+        height: 11
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ba50eef987c89f0800000000000000
+      internalID: -464864033237521607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_20
+      rect:
+        serializedVersion: 2
+        x: 5319
+        y: 3
+        width: 219
+        height: 419
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddcd1ed096ee02330800000000000000
+      internalID: 3684206630160948445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_21
+      rect:
+        serializedVersion: 2
+        x: 5321
+        y: 411
+        width: 7
+        height: 12
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27fc925c40a63e290800000000000000
+      internalID: -7862323955738488974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_22
+      rect:
+        serializedVersion: 2
+        x: 5526
+        y: 412
+        width: 10
+        height: 11
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0c479f9efd4ee50800000000000000
+      internalID: 6837836330260807926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_23
+      rect:
+        serializedVersion: 2
+        x: 5551
+        y: 3
+        width: 136
+        height: 414
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f9e73bbe25e67a0800000000000000
+      internalID: -6382072449655201977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_24
+      rect:
+        serializedVersion: 2
+        x: 5700
+        y: 3
+        width: 219
+        height: 419
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f925b69d997b8ab50800000000000000
+      internalID: 6604730724944401055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_25
+      rect:
+        serializedVersion: 2
+        x: 5702
+        y: 412
+        width: 10
+        height: 11
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 679a10c3cf6cb9690800000000000000
+      internalID: -7594257559989409418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_26
+      rect:
+        serializedVersion: 2
+        x: 5910
+        y: 411
+        width: 7
+        height: 12
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a37d3795f2b53740800000000000000
+      internalID: 5131204118332666789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_27
+      rect:
+        serializedVersion: 2
+        x: 5927
+        y: 411
+        width: 12
+        height: 12
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bbdfe54e3309fb70800000000000000
+      internalID: 8933174901862292409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_28
+      rect:
+        serializedVersion: 2
+        x: 5930
+        y: 3
+        width: 288
+        height: 420
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 732863faff1eac4b0800000000000000
+      internalID: -5419270713314475465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_29
+      rect:
+        serializedVersion: 2
+        x: 6208
+        y: 412
+        width: 11
+        height: 11
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f968e8bec46f4d0800000000000000
+      internalID: -3101206718805794927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_30
+      rect:
+        serializedVersion: 2
+        x: 6241
+        y: 412
+        width: 11
+        height: 11
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78a6cbb821b1d990800000000000000
+      internalID: -7362909127266883462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_31
+      rect:
+        serializedVersion: 2
+        x: 6244
+        y: 3
+        width: 351
+        height: 420
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa7f7ea13c14ab90800000000000000
+      internalID: -7231624101943608579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_32
+      rect:
+        serializedVersion: 2
+        x: 6588
+        y: 412
+        width: 10
+        height: 11
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d82b45b270dd350800000000000000
+      internalID: 6042994157687049607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_33
+      rect:
+        serializedVersion: 2
+        x: 6615
+        y: 412
+        width: 11
+        height: 11
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d329f9884b19b8a30800000000000000
+      internalID: 4218625680534901309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_34
+      rect:
+        serializedVersion: 2
+        x: 6619
+        y: 3
+        width: 400
+        height: 412
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b3b052ed3d6d720800000000000000
+      internalID: 2870714763552963362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_35
+      rect:
+        serializedVersion: 2
+        x: 7010
+        y: 411
+        width: 14
+        height: 13
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff52b06df23f0b850800000000000000
+      internalID: 6390875258018801151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_36
+      rect:
+        serializedVersion: 2
+        x: 7456
+        y: 411
+        width: 8
+        height: 11
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43b165f08bd11c5c0800000000000000
+      internalID: -4197040701364102348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_37
+      rect:
+        serializedVersion: 2
+        x: 7495
+        y: 411
+        width: 7
+        height: 12
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1a2c146ae9149f40800000000000000
+      internalID: 5734236720042093086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_38
+      rect:
+        serializedVersion: 2
+        x: 7499
+        y: 3
+        width: 483
+        height: 420
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 721c5bf6634922960800000000000000
+      internalID: 7575780484713922855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_39
+      rect:
+        serializedVersion: 2
+        x: 7975
+        y: 410
+        width: 12
+        height: 15
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e46e1d78b5794f5d0800000000000000
+      internalID: -3029630229937002930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_40
+      rect:
+        serializedVersion: 2
+        x: 7983
+        y: 3
+        width: 522
+        height: 419
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab5317e5518325c0800000000000000
+      internalID: -4241404218103866464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_41
+      rect:
+        serializedVersion: 2
+        x: 8498
+        y: 412
+        width: 10
+        height: 11
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37a6a9b0f49869a0800000000000000
+      internalID: -6239573522094053569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_42
+      rect:
+        serializedVersion: 2
+        x: 8524
+        y: 411
+        width: 7
+        height: 12
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c742987c708338760800000000000000
+      internalID: 7458867013919253628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_43
+      rect:
+        serializedVersion: 2
+        x: 8528
+        y: 3
+        width: 571
+        height: 420
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc32f222882c3fe70800000000000000
+      internalID: 9147869158064464847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_44
+      rect:
+        serializedVersion: 2
+        x: 9092
+        y: 411
+        width: 12
+        height: 11
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e32d437037577a50800000000000000
+      internalID: 6518774851246564320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_45
+      rect:
+        serializedVersion: 2
+        x: 9107
+        y: 3
+        width: 624
+        height: 420
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d8e6cdf057629b0800000000000000
+      internalID: -5105264416594686659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_46
+      rect:
+        serializedVersion: 2
+        x: 9745
+        y: 3
+        width: 716
+        height: 423
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc999789dd50464e0800000000000000
+      internalID: -1989458686086899251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_47
+      rect:
+        serializedVersion: 2
+        x: 11233
+        y: 412
+        width: 38
+        height: 11
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d43d3796f4e630f0800000000000000
+      internalID: -1137470108114012976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 781
+        height: 418
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8b875284996bd50800000000000000
+      internalID: 6752753226434001129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_48
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 2
+        width: 713
+        height: 419
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1df45acaee788fd0800000000000000
+      internalID: -2339480459536958182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_49
+      rect:
+        serializedVersion: 2
+        x: 4211
+        y: 0
+        width: 416
+        height: 420
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6abcf4d8724458d90800000000000000
+      internalID: -7096190701187118170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_50
+      rect:
+        serializedVersion: 2
+        x: 7010
+        y: 4
+        width: 458
+        height: 409
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434239d5d462de5d0800000000000000
+      internalID: -3031724860426214348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vision_cone_blinking_51
+      rect:
+        serializedVersion: 2
+        x: 10447
+        y: 2
+        width: 804
+        height: 421
+      alignment: 9
+      pivot: {x: 0.49984, y: 0.01}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21431cb5b9e32190800000000000000
+      internalID: -7988284347271397073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

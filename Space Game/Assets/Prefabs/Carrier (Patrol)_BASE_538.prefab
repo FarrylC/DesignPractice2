@@ -131,11 +131,7 @@ GameObject:
   - component: {fileID: 6585033137147797979}
   m_Layer: 0
   m_Name: Carrier (Patrol)
-<<<<<<< HEAD
   m_TagString: Enemy
-=======
-  m_TagString: Untagged
->>>>>>> EnemyAnimations
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -180,8 +176,8 @@ MonoBehaviour:
     _version: 3.16
     _category: 
     _comments: 
-    _translation: {x: 331, y: 368}
-    _zoomFactor: 0.75124776
+    _translation: {x: 21, y: 21}
+    _zoomFactor: 1
   _firstActivation: 0
   _enableAction: 0
   _disableAction: 0

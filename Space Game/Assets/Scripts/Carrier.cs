@@ -21,18 +21,27 @@ public class Carrier : MonoBehaviour
     public Rigidbody2D rb;
     public float acceleration, maxSpeed, waypointBuffer;
 
+    public Animator enemyAnimator;
+    private Animator visionAnimator;
+    private SpriteRenderer spriteRenderer;
+    [Range(0.1f, 2f)] public float blinkSpeed = 1;
+    public bool HasBlinked;
     [HideInInspector] public GameObject player;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        if(type == CarrierType.Patrol)
+            spriteRenderer = transform.Find("vision_cone").GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
         Detect();
+        HandleAnimation();
+
     }
 
     public void Detect()
@@ -95,5 +104,94 @@ public class Carrier : MonoBehaviour
     public void SpawnMinion()
     { 
         Instantiate(minion, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
+    }
+    public void HandleAnimation()
+    {
+
+      
+        if(type == CarrierType.Stationary)
+        {
+            if (transform.Find("vision_cone_animated").GetComponent<Animator>() == null)
+            {
+                throw new System.Exception("Can't find vision_cone_animated Animator in the prefab");
+            }
+            else;
+            {
+                visionAnimator = transform.Find("vision_cone_animated").GetComponent<Animator>();
+            }
+        }
+
+        if(type == CarrierType.Stationary)
+            visionAnimator.SetFloat("blinkSpeed", blinkSpeed);
+        enemyAnimator.SetFloat("blinkSpeed", blinkSpeed);
+
+        if (isPlayerInSight)
+        {
+            enemyAnimator.SetBool("IsAlerted", true);
+        }
+        else
+        {
+            enemyAnimator.SetBool("IsAlerted", false);
+        }
+        if(HasBlinked)
+        {
+            enemyAnimator.SetBool("IsBlinked", true);
+            if (type == CarrierType.Stationary)
+            {
+                visionAnimator.SetBool("IsBlinked", true);
+            }
+        }
+        else
+        {
+            enemyAnimator.SetBool("IsBlinked", false);
+            if (type == CarrierType.Stationary)
+            {
+                visionAnimator.SetBool("IsBlinked", false);
+            }
+        }
+
+    }
+    //This is called from teh Redirector script on the enemy's sprite child
+    public void AnimEventAlertBlinkOff(string message)
+    {
+        if(type == CarrierType.Stationary &&  visionAnimator == null)
+        {
+            throw new System.Exception("Can't find vision_cone_animated Animator in the prefab");
+        }
+        //Activated via the EyeShut animation Event when it gets to fully closed 
+        if(message.Equals("EyeShut") && HasBlinked)
+        {
+            //makes it so that animation stops when eyes closed
+            if(visionAnimator)
+                visionAnimator.speed = 0;
+            enemyAnimator.speed = 0;
+            if(type == CarrierType.Patrol)
+            {
+                spriteRenderer.enabled = false;
+            }
+            //waits a few seconds before opening it again
+            StartCoroutine(PauseToOpenEye(visionAnimator));
+            //plays rest of blink animation
+
+        }
+        //Transitions to another state so its stops blinking
+        if(message.Equals("BlinkAnimationOver") && HasBlinked)
+        {
+            HasBlinked = false;
+        }
+    }
+    IEnumerator PauseToOpenEye(Animator visionAnim)
+    {
+        enemyAnimator.speed = 0;
+        if (type == CarrierType.Stationary)
+            visionAnim.speed = 0;
+        yield return new WaitForSeconds(blinkSpeed);
+        enemyAnimator.speed = 1;
+        if (type == CarrierType.Stationary)
+            visionAnim.speed = 1;
+        if(type == CarrierType.Patrol)
+        {
+            spriteRenderer.enabled = true;
+        }
     }
 }
