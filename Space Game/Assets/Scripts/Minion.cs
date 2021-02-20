@@ -40,7 +40,10 @@ public class Minion : MonoBehaviour
             deathTimer -= 1 * Time.deltaTime;
 
             if (deathTimer <= 0)
-                Destroy(gameObject);
+            {
+                hitPlayer = true;
+                minionAnimator.SetBool("didHitPlayer", true);
+            }
         }
     }
     //This method stops the Animator so that the death audio can be played
