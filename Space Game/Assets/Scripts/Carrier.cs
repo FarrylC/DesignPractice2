@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Carrier : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class Carrier : MonoBehaviour
     public GameObject minion;
     public int spawnedMinions;
     public int spawnableMinions;
+
+    public GameObject redBoarder;
 
     public float visionRange, visionAngle, spawnRange;
     [HideInInspector] public bool isPlayerInSight, isPlayerInRange;
@@ -46,6 +49,8 @@ public class Carrier : MonoBehaviour
 
     public void Detect()
     {
+        redBoarder.SetActive(true);
+
         // Check if the player is within vision range
         if (Vector2.Distance(transform.position, player.transform.position) < visionRange && Vector2.Angle(transform.position, player.transform.position) <= visionAngle)
             isPlayerInSight = true;
@@ -63,6 +68,8 @@ public class Carrier : MonoBehaviour
 
     public void Patrol()
     {
+        redBoarder.SetActive(false);
+        
         // Only patrol if the carrier is a patrol type
         if (type != CarrierType.Patrol)
             return;
