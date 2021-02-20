@@ -71,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -4375981259033190578, guid: 5684b89140e838f4aa72b7da0cb86620,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -116,6 +116,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carrierScript: {fileID: 0}
+--- !u!1 &1232233890505009922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7513373484723558047}
+  m_Layer: 0
+  m_Name: StationaryMinionSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7513373484723558047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232233890505009922}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.674, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5887831509682833219}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5533355883437427705
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,7 +160,7 @@ GameObject:
   - component: {fileID: 1417487153724674775}
   - component: {fileID: 2190535762065063637}
   m_Layer: 0
-  m_Name: Carrier (Stationary)_BASE_286
+  m_Name: Carrier (Stationary)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -149,6 +179,7 @@ Transform:
   m_Children:
   - {fileID: 6306711303410667490}
   - {fileID: 8849384353472050066}
+  - {fileID: 7513373484723558047}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
