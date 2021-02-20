@@ -290,8 +290,9 @@ MonoBehaviour:
   minion: {fileID: 8937611536362171679, guid: aa8072298d81e8c4ebde30b7beb007f4, type: 3}
   spawnedMinions: 0
   spawnableMinions: 5
+  redBoarder: {fileID: 0}
   visionRange: 5
-  visionAngle: 60
+  visionAngle: 30
   spawnRange: 4
   isPlayerInSight: 0
   isPlayerInRange: 0
