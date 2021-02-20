@@ -66,6 +66,7 @@ public class PlayerHealth : MonoBehaviour
             {
                 _damaged = true;
                 StartCoroutine(ColorShiftPlayerDamaged());
+                SendMessage("KnockBack");
                 setHealth(health - 1);
 
                 SetInvincible();

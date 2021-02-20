@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     public float DecelerationTime = 1;
     public float MaxSpeed = 1;
     public float rotationSpeed; // Degrees per second
-
+    public float knockBackForce = 2f;
 
 
     public Rigidbody2D rb;
@@ -157,6 +157,19 @@ public class PlayerController : MonoBehaviour
             l_dec = true;
             Spaceship_SFX();
         }    
+
+        
+
+    }
+
+    //Handle Knocback when hitting asteroids
+    //Called via PlayerHeatlh Script using a SendMessage
+    private void KnockBack()
+    {
+        Debug.Log("Knocked");
+        rb.AddForce(-transform.up * knockBackForce, ForceMode2D.Impulse);
+        rb.angularVelocity = 0;
+        
     }
 
     // Handles player sprite animation
@@ -195,6 +208,7 @@ public class PlayerController : MonoBehaviour
     }
 
     // Handles player SFX
+    #region SoundFX Be careful to NOT add things into this region but outside of it
     public void Spaceship_SFX()
     {
     //SFX Functions
@@ -344,5 +358,5 @@ public class PlayerController : MonoBehaviour
         }
 
     }
-
+    #endregion
 }
