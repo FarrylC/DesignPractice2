@@ -11,12 +11,14 @@ public class UIController : MonoBehaviour
 
     public PlayerHealth playerHealth;
 
+
     // Update is called once per frame
     void Update()
     {
         //start coroutine if player has no health
         if (playerHealth.health <= 0) 
         {
+            crack.SetActive(true);
             StartCoroutine(FadeBlackOutSquare());
         }
 
