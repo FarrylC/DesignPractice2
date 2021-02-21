@@ -14,7 +14,9 @@ public class Minion : MonoBehaviour
     public float deathTimer;
     private bool hitPlayer;
     
-    
+    public AudioSource m_spawn_s;
+    public AudioSource m_death_s;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -70,6 +72,12 @@ public class Minion : MonoBehaviour
     IEnumerator WaitForDeathSound(float audioDuration)
     {
         //Waits for the death sound to finish playing before destroying Minion
+        if (!minion_death_sfx.isPlaying)
+        {
+            var minion_death_sfx = transform.Find("death sound").gameObject;
+            var minion_death_sfx_source = minion_death_sfx.GetComponent<AudioSource>();
+            minion_death_sfx_source.Play();
+        }
         yield return new WaitForSeconds(audioDuration);
         Destroy(gameObject);
         Debug.Log("Destroyed");

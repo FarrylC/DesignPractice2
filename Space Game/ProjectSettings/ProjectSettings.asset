@@ -643,10 +643,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: 555b2417-2c02-4200-a8e5-20d3cae18f68
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: Space Game
+  organizationId: zizomass
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
