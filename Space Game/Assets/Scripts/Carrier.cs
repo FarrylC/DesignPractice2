@@ -30,6 +30,7 @@ public class Carrier : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     [Range(0.1f, 2f)] public float blinkSpeed = 1;
     public bool HasBlinked;
+    public float blinkDuration, blinkInterval;
     [HideInInspector] public GameObject player;
 
     // Start is called before the first frame update
@@ -38,6 +39,9 @@ public class Carrier : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         if(type == CarrierType.Patrol)
             spriteRenderer = transform.Find("vision_cone").GetComponent<SpriteRenderer>();
+
+        // Start blinking
+        StartCoroutine(Blink());
     }
 
     // Update is called once per frame
@@ -50,6 +54,10 @@ public class Carrier : MonoBehaviour
 
     public void Detect()
     {
+        // If the enemy is blinking, do nothing
+        if (HasBlinked)
+            return;
+
         // Check if the player is within vision range
         Vector2 distanceToPlayer = player.transform.position - eyePos.transform.position;
         if (distanceToPlayer.magnitude < visionRange && Vector2.Angle(eyePos.transform.up, distanceToPlayer) <= visionAngle)
@@ -233,5 +241,16 @@ public class Carrier : MonoBehaviour
         {
             spriteRenderer.enabled = true;
         }
+    }
+
+    private IEnumerator Blink()
+    {
+        // Only blink if the player is not is sight
+        if(!isPlayerInSight)
+            HasBlinked = true;
+
+        // Blink again
+        yield return new WaitForSeconds(blinkInterval);
+        StartCoroutine(Blink());
     }
 }

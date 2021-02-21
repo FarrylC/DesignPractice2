@@ -290,6 +290,8 @@ MonoBehaviour:
   enemyAnimator: {fileID: 1740596575483241624}
   blinkSpeed: 1
   HasBlinked: 0
+  blinkDuration: 0.2
+  blinkInterval: 5
   player: {fileID: 0}
 --- !u!50 &6585033137147797979
 Rigidbody2D:
