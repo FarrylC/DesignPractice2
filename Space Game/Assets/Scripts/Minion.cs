@@ -72,12 +72,12 @@ public class Minion : MonoBehaviour
     IEnumerator WaitForDeathSound(float audioDuration)
     {
         //Waits for the death sound to finish playing before destroying Minion
-        if (!minion_death_sfx.isPlaying)
-        {
-            var minion_death_sfx = transform.Find("death sound").gameObject;
-            var minion_death_sfx_source = minion_death_sfx.GetComponent<AudioSource>();
-            minion_death_sfx_source.Play();
-        }
+        //if (!minion_death_sfx.isPlaying)
+        //{
+        //    var minion_death_sfx = transform.Find("death sound").gameObject;
+        //    var minion_death_sfx_source = minion_death_sfx.GetComponent<AudioSource>();
+        //    minion_death_sfx_source.Play();
+        //}
         yield return new WaitForSeconds(audioDuration);
         Destroy(gameObject);
         Debug.Log("Destroyed");

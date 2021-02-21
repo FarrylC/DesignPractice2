@@ -1363,7 +1363,7 @@ MonoBehaviour:
   health: 6
   rb: {fileID: 732436994}
   healthBar: {fileID: 556172251}
-  PostProcessVFX: {fileID: 0}
+  PostProcessVFX: {fileID: 2047336261}
 --- !u!61 &732436998
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1815,6 +1815,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6585033137147797976, guid: 95e6070f8ab7254449cfee59083b1119,
+        type: 3}
+      propertyPath: _boundGraphSource._zoomFactor
+      value: 0.25001004
+      objectReference: {fileID: 0}
+    - target: {fileID: 6585033137147797976, guid: 95e6070f8ab7254449cfee59083b1119,
+        type: 3}
+      propertyPath: _boundGraphSource._translation.x
+      value: 391
+      objectReference: {fileID: 0}
+    - target: {fileID: 6585033137147797976, guid: 95e6070f8ab7254449cfee59083b1119,
+        type: 3}
+      propertyPath: _boundGraphSource._translation.y
+      value: 76
+      objectReference: {fileID: 0}
     - target: {fileID: 6585033137147797977, guid: 95e6070f8ab7254449cfee59083b1119,
         type: 3}
       propertyPath: m_RootOrder
@@ -1918,6 +1933,21 @@ PrefabInstance:
         type: 3}
       propertyPath: visionAngle
       value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874627855339684771, guid: ea3ddd291827f9f4c91e5666345d8118,
+        type: 3}
+      propertyPath: _boundGraphSource._zoomFactor
+      value: 0.9613551
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874627855339684771, guid: ea3ddd291827f9f4c91e5666345d8118,
+        type: 3}
+      propertyPath: _boundGraphSource._translation.x
+      value: -674
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874627855339684771, guid: ea3ddd291827f9f4c91e5666345d8118,
+        type: 3}
+      propertyPath: _boundGraphSource._translation.y
+      value: -248
       objectReference: {fileID: 0}
     - target: {fileID: 5533355883437427705, guid: ea3ddd291827f9f4c91e5666345d8118,
         type: 3}
