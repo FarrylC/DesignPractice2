@@ -1363,7 +1363,7 @@ MonoBehaviour:
   health: 6
   rb: {fileID: 732436994}
   healthBar: {fileID: 556172251}
-  PostProcessVFX: {fileID: 0}
+  PostProcessVFX: {fileID: 2047336261}
 --- !u!61 &732436998
 BoxCollider2D:
   m_ObjectHideFlags: 0
