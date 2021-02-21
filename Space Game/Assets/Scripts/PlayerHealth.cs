@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Rendering.PostProcessing;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class PlayerHealth : MonoBehaviour
     private float _invincibleTime = 1.0f;
     private bool _isInvincible = false;
     private bool _damaged;
+
+    public PostProcessVolume PostProcessVFX;
+     
     
     // Start is called before the first frame update
     void Start()
@@ -28,12 +32,15 @@ public class PlayerHealth : MonoBehaviour
         //Set start value of health bar
         healthBar.maxValue = maxHealth;
         healthBar.value = maxHealth;
+        PostProcessVFX.weight = 0f;
+
     }
 
     // Update is called once per frame
     void Update()
     {
         setHealth(health);
+        LowLifePPFX();
     }
 
     public void setHealth(int _health)
@@ -126,6 +133,14 @@ public class PlayerHealth : MonoBehaviour
         spriteRenderer.color = Color.red;
         yield return new WaitForSeconds(0.5f);
         spriteRenderer.color = Color.white;
+    }
+
+    void LowLifePPFX()
+    {
+        if (health < maxHealth/2)
+        PostProcessVFX.weight = 1f/health;
+        else
+        PostProcessVFX.weight = 0f;
     }
 
 }
