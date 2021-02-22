@@ -12,6 +12,8 @@ public class Carrier : MonoBehaviour
     public int spawnedMinions;
     public int spawnableMinions;
 
+    public GameObject minionSpawner;
+
     public GameObject redBoarder;
 
     public float visionRange, visionAngle, spawnRange;
@@ -137,17 +139,19 @@ public class Carrier : MonoBehaviour
         //Null checks in case we're missing a Spawner for them. Spawns them at a location is more pleasing to the player
         if(type == CarrierType.Patrol)
         {
-            if (!GameObject.Find("PatrolMinionSpawner"))
-                throw new System.Exception("missing PatrolMinionSpawner on Prefab");
-            GameObject patrolMinionSpawner = GameObject.Find("PatrolMinionSpawner");
-            Instantiate(minion, new Vector3(patrolMinionSpawner.transform.position.x, patrolMinionSpawner.transform.position.y, 0), Quaternion.identity);
+            //if (!GameObject.Find("PatrolMinionSpawner"))
+              //  throw new System.Exception("missing PatrolMinionSpawner on Prefab");
+            //GameObject patrolMinionSpawner = this.gameOb("PatrolMinionSpawner");
+            //Instantiate(minion, new Vector3(patrolMinionSpawner.transform.position.x, patrolMinionSpawner.transform.position.y, 0), Quaternion.identity);
+            Instantiate(minion, new Vector3(minionSpawner.transform.position.x, minionSpawner.transform.position.y, 0), Quaternion.identity);
         }
         else if(type == CarrierType.Stationary)
         {
-            if (!GameObject.Find("StationaryMinionSpawner"))
-                throw new System.Exception("missing StationaryMinionSpawner on Prefab");
-            GameObject stationaryMinionSpawner = GameObject.Find("StationaryMinionSpawner");
-            Instantiate(minion, new Vector3(stationaryMinionSpawner.transform.position.x, stationaryMinionSpawner.transform.position.y, 0), Quaternion.identity);
+            //if (!GameObject.Find("StationaryMinionSpawner"))
+              //  throw new System.Exception("missing StationaryMinionSpawner on Prefab");
+            //GameObject stationaryMinionSpawner = GameObject.Find("StationaryMinionSpawner");
+            //Instantiate(minion, new Vector3(stationaryMinionSpawner.transform.position.x, stationaryMinionSpawner.transform.position.y, 0), Quaternion.identity);
+            Instantiate(minion, new Vector3(minionSpawner.transform.position.x, minionSpawner.transform.position.y, 0), Quaternion.identity);
         }
             
         
