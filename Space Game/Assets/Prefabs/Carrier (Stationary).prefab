@@ -242,8 +242,8 @@ MonoBehaviour:
     _version: 3.16
     _category: 
     _comments: 
-    _translation: {x: -600.77423, y: -132.94461}
-    _zoomFactor: 1
+    _translation: {x: 175, y: -190}
+    _zoomFactor: 0.9080067
   _firstActivation: 0
   _enableAction: 0
   _disableAction: 0
@@ -328,7 +328,7 @@ MonoBehaviour:
   redBoarder: {fileID: 0}
   visionRange: 5
   visionAngle: 45
-  spawnRange: 4
+  spawnRange: 5
   isPlayerInSight: 0
   isPlayerInRange: 0
   cooldownTime: 5
