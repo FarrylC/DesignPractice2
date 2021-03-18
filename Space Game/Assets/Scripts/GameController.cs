@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
@@ -8,10 +9,14 @@ public class GameController : MonoBehaviour
     int detectCount = 0;
     public GameObject redBorder;
 
+    [HideInInspector] public int currentLevel = 1;
+    public Text levelDisplay;
+    public List<string> levelNames = new List<string>();
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        UpdateLevelDisplay();
     }
 
     // Update is called once per frame
@@ -48,5 +53,15 @@ public class GameController : MonoBehaviour
         // If the player is detected by one or more enemies, show the red border
         else
             redBorder.SetActive(true);
+    }
+
+    public void UpdateLevelDisplay()
+    {
+        // If there is no display label, do nothing
+        if (levelDisplay == null)
+            return;
+
+        // Show the name of the current level
+        levelDisplay.text = levelNames[currentLevel - 1];
     }
 }
