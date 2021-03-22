@@ -2,9 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
+
+    private static GameController instance;
+
     public GameObject player;
     int detectCount = 0;
     public GameObject redBorder;
@@ -12,6 +16,18 @@ public class GameController : MonoBehaviour
     [HideInInspector] public int currentLevel = 1;
     public Text levelDisplay;
     public List<string> levelNames = new List<string>();
+
+    private void Awake()
+    {
+        // Only have one instance of the game controller at all times
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(instance);
+        }
+        else
+            Destroy(gameObject);
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -45,6 +61,10 @@ public class GameController : MonoBehaviour
 
     public void HandleRedBorder()
     {
+        // If there is not red border, do nothing
+        if (!redBorder)
+            return;
+
         // If the player is not detected by any enemies, hide the red border
         if (detectCount == 0)
             redBorder.SetActive(false);
@@ -62,5 +82,10 @@ public class GameController : MonoBehaviour
 
         // Show the name of the current level
         levelDisplay.text = levelNames[currentLevel - 1];
+    }
+
+    public void GoToScene(int sceneNum)
+    {
+        SceneManager.LoadScene(sceneNum);
     }
 }
