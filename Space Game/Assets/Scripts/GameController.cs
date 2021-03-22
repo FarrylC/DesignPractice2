@@ -45,7 +45,6 @@ public class GameController : MonoBehaviour
 
     public void HandleRedBorder()
     {
-        print(detectCount);
         // If the player is not detected by any enemies, hide the red border
         if (detectCount == 0)
             redBorder.SetActive(false);

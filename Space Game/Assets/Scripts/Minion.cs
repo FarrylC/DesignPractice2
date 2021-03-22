@@ -80,7 +80,7 @@ public class Minion : MonoBehaviour
         //}
         yield return new WaitForSeconds(audioDuration);
         Destroy(gameObject);
-        Debug.Log("Destroyed");
+        //Debug.Log("Destroyed");
     }
 
   
