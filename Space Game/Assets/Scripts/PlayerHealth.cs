@@ -19,11 +19,22 @@ public class PlayerHealth : MonoBehaviour
     private bool _damaged;
 
     public PostProcessVolume PostProcessVFX;
+
+    //Shield Sprite on Player
+    private GameObject playerShield;
+    private SpriteRenderer playerShieldSpriteRenderer;
      
     
     // Start is called before the first frame update
     void Start()
     {
+        playerShield = GameObject.Find("SpriteShield");
+        if (!playerShield)
+            throw new System.Exception("Mising SpriteShield child empty game obect with sprite and animation controller in Player Object");
+
+        playerShieldSpriteRenderer = playerShield.GetComponent<SpriteRenderer>();
+        if (!playerShieldSpriteRenderer)
+            throw new System.Exception("Missing SpriteRenderer on SpriteShield gameobect as a child of Player Game Object since its used to ENABLE and DISABLE Shield animation instead of using states");
         setHealth(maxHealth);
 
         if (!GameObject.Find("Sprite").gameObject.GetComponent<SpriteRenderer>())
@@ -41,6 +52,7 @@ public class PlayerHealth : MonoBehaviour
     {
         setHealth(health);
         LowLifePPFX();
+        HandleShieldAnim();
     }
 
     public void setHealth(int _health)
@@ -110,6 +122,7 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+
     //Stop player from taking damage for a given time.
     public void SetInvincible()
     {
@@ -128,6 +141,14 @@ public class PlayerHealth : MonoBehaviour
         _damaged = false;
     }
 
+    private void HandleShieldAnim()
+    {
+        if (_isInvincible)
+            playerShieldSpriteRenderer.enabled = true;
+        else
+            playerShieldSpriteRenderer.enabled = false;
+
+    }
     IEnumerator ColorShiftPlayerDamaged()
     {
         spriteRenderer.color = Color.red;
