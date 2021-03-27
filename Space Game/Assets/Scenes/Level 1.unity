@@ -2002,6 +2002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   completedSceneNum: 4
+  LevelFinished: {fileID: 0}
 --- !u!212 &1379305389
 SpriteRenderer:
   m_ObjectHideFlags: 0
