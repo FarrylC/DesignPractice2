@@ -5,12 +5,23 @@ using UnityEngine;
 public class Goal : MonoBehaviour
 {
     public int completedSceneNum = 4;
+    public AudioClip LevelFinished;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
+
+    IEnumerator playSoundThenLoad()
+    {
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.clip = LevelFinished;
+        audio.Play();
+        yield return new WaitForSeconds(audio.clip.length);
+        GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>().GoToScene(completedSceneNum);
+    }
+
 
     // Update is called once per frame
     void Update()
@@ -22,7 +33,7 @@ public class Goal : MonoBehaviour
     {
         if (collision.GetComponent<PlayerController>())
         {
-            GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>().GoToScene(completedSceneNum);
+            StartCoroutine(playSoundThenLoad());
         }
     }
 }

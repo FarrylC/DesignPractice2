@@ -13,9 +13,11 @@ public class Minion : MonoBehaviour
     public float minionMaxSpeed;
     public float deathTimer;
     private bool hitPlayer;
+
     
     public AudioSource m_spawn_s;
     public AudioSource m_death_s;
+
 
     // Start is called before the first frame update
     void Start()
