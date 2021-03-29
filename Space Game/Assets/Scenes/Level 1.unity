@@ -2173,7 +2173,7 @@ MonoBehaviour:
   rb: {fileID: 472431587}
   buffer: 2
   followSpeed: 1
-  orthographicSize: 5
+  orthographicSize: 10
 --- !u!4 &472431586
 Transform:
   m_ObjectHideFlags: 0
@@ -3847,7 +3847,7 @@ GameObject:
   - component: {fileID: 732436994}
   - component: {fileID: 732436997}
   - component: {fileID: 732436998}
-  - component: {fileID: 732436999}
+  - component: {fileID: 732437000}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3869,7 +3869,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 10
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -3976,8 +3976,8 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!61 &732436999
-BoxCollider2D:
+--- !u!60 &732437000
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3999,9 +3999,14 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.012470245, y: 0.5885711}
+      - {x: -0.41495043, y: -0.33929512}
+      - {x: -0.30103058, y: -0.4723934}
+      - {x: -0.01260376, y: -0.34644794}
+      - {x: 0.3134972, y: -0.49732852}
+      - {x: 0.37755108, y: -0.35176283}
 --- !u!1 &734915766
 GameObject:
   m_ObjectHideFlags: 0
@@ -27427,7 +27432,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2000668878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28131,7 +28136,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
