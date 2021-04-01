@@ -16,7 +16,7 @@ public class UIController : MonoBehaviour
     void Update()
     {
         //start coroutine if player has no health
-        if (playerHealth.health <= 0) 
+        if (playerHealth.health == 0) 
         {
             crack.SetActive(true);
             StartCoroutine(FadeBlackOutSquare());
@@ -36,7 +36,7 @@ public class UIController : MonoBehaviour
         Color objectColor = blackOutSquare.GetComponent<Image>().color;
         float fadeAmount;
 
-        if (fadeToBLack)
+        /*if (fadeToBLack)
         {
             while (blackOutSquare.GetComponent<Image>().color.a < 1)
             {
@@ -60,6 +60,10 @@ public class UIController : MonoBehaviour
                 blackOutSquare.GetComponent<Image>().color = objectColor;
                 yield return null;
             }
-        }
+        }*/
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        fadeToBLack = false;
+
+        yield return null;
     }
 }
