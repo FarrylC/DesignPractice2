@@ -25428,9 +25428,10 @@ GameObject:
   - component: {fileID: 737858176}
   - component: {fileID: 737858175}
   - component: {fileID: 737858174}
+  - component: {fileID: 737858177}
   m_Layer: 0
   m_Name: AsteroidsTileMap_11 (6)
-  m_TagString: Untagged
+  m_TagString: Asteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25521,6 +25522,76 @@ Transform:
   m_Father: {fileID: 302952161}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 53.555004}
+--- !u!60 &737858177
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737858173}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.33387622, y: -0.21009772}
+      - {x: 0.3436482, y: -0.14495113}
+      - {x: 0.3436482, y: -0.10586319}
+      - {x: 0.32410422, y: -0.08306189}
+      - {x: 0.33387622, y: -0.03745928}
+      - {x: 0.3534202, y: -0.021172637}
+      - {x: 0.37296414, y: 0.0016286644}
+      - {x: 0.3794788, y: 0.017915308}
+      - {x: 0.3794788, y: 0.0732899}
+      - {x: 0.37622148, y: 0.12214983}
+      - {x: 0.36319217, y: 0.23941368}
+      - {x: 0.35016286, y: 0.29478827}
+      - {x: 0.30781758, y: 0.30781758}
+      - {x: 0.24918567, y: 0.3306189}
+      - {x: 0.21335503, y: 0.3306189}
+      - {x: 0.19381107, y: 0.36970684}
+      - {x: 0.13843648, y: 0.43811074}
+      - {x: 0.11563517, y: 0.4478827}
+      - {x: 0.06677524, y: 0.4478827}
+      - {x: 0.021172637, y: 0.44462538}
+      - {x: -0.0048859934, y: 0.41530943}
+      - {x: -0.08957654, y: 0.37622148}
+      - {x: -0.12540716, y: 0.3566775}
+      - {x: -0.16775243, y: 0.32410422}
+      - {x: -0.1872964, y: 0.30456024}
+      - {x: -0.1742671, y: 0.23289901}
+      - {x: -0.2198697, y: 0.19055374}
+      - {x: -0.23289901, y: 0.15798046}
+      - {x: -0.24592833, y: 0.10260586}
+      - {x: -0.27198696, y: 0.04397394}
+      - {x: -0.262215, y: 0.011400651}
+      - {x: -0.262215, y: -0.021172637}
+      - {x: -0.242671, y: -0.08957654}
+      - {x: -0.23615634, y: -0.13517915}
+      - {x: -0.22312702, y: -0.20032573}
+      - {x: -0.21661237, y: -0.23615634}
+      - {x: -0.20032573, y: -0.24918567}
+      - {x: -0.10912052, y: -0.28175893}
+      - {x: -0.03745928, y: -0.3110749}
+      - {x: 0.017915308, y: -0.33387622}
+      - {x: 0.03745928, y: -0.34690553}
+      - {x: 0.07654723, y: -0.34690553}
+      - {x: 0.1286645, y: -0.3208469}
+      - {x: 0.21661237, y: -0.2882736}
+      - {x: 0.3110749, y: -0.23289901}
 --- !u!1 &743215118
 GameObject:
   m_ObjectHideFlags: 0
@@ -26882,9 +26953,10 @@ GameObject:
   - component: {fileID: 1005414096}
   - component: {fileID: 1005414095}
   - component: {fileID: 1005414094}
+  - component: {fileID: 1005414097}
   m_Layer: 0
   m_Name: AsteroidsTileMap_11 (3)
-  m_TagString: Untagged
+  m_TagString: Asteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26975,6 +27047,76 @@ Transform:
   m_Father: {fileID: 302952161}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -17.407001}
+--- !u!60 &1005414097
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005414093}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.33387622, y: -0.21009772}
+      - {x: 0.3436482, y: -0.14495113}
+      - {x: 0.3436482, y: -0.10586319}
+      - {x: 0.32410422, y: -0.08306189}
+      - {x: 0.33387622, y: -0.03745928}
+      - {x: 0.3534202, y: -0.021172637}
+      - {x: 0.37296414, y: 0.0016286644}
+      - {x: 0.3794788, y: 0.017915308}
+      - {x: 0.3794788, y: 0.0732899}
+      - {x: 0.37622148, y: 0.12214983}
+      - {x: 0.36319217, y: 0.23941368}
+      - {x: 0.35016286, y: 0.29478827}
+      - {x: 0.30781758, y: 0.30781758}
+      - {x: 0.24918567, y: 0.3306189}
+      - {x: 0.21335503, y: 0.3306189}
+      - {x: 0.19381107, y: 0.36970684}
+      - {x: 0.13843648, y: 0.43811074}
+      - {x: 0.11563517, y: 0.4478827}
+      - {x: 0.06677524, y: 0.4478827}
+      - {x: 0.021172637, y: 0.44462538}
+      - {x: -0.0048859934, y: 0.41530943}
+      - {x: -0.08957654, y: 0.37622148}
+      - {x: -0.12540716, y: 0.3566775}
+      - {x: -0.16775243, y: 0.32410422}
+      - {x: -0.1872964, y: 0.30456024}
+      - {x: -0.1742671, y: 0.23289901}
+      - {x: -0.2198697, y: 0.19055374}
+      - {x: -0.23289901, y: 0.15798046}
+      - {x: -0.24592833, y: 0.10260586}
+      - {x: -0.27198696, y: 0.04397394}
+      - {x: -0.262215, y: 0.011400651}
+      - {x: -0.262215, y: -0.021172637}
+      - {x: -0.242671, y: -0.08957654}
+      - {x: -0.23615634, y: -0.13517915}
+      - {x: -0.22312702, y: -0.20032573}
+      - {x: -0.21661237, y: -0.23615634}
+      - {x: -0.20032573, y: -0.24918567}
+      - {x: -0.10912052, y: -0.28175893}
+      - {x: -0.03745928, y: -0.3110749}
+      - {x: 0.017915308, y: -0.33387622}
+      - {x: 0.03745928, y: -0.34690553}
+      - {x: 0.07654723, y: -0.34690553}
+      - {x: 0.1286645, y: -0.3208469}
+      - {x: 0.21661237, y: -0.2882736}
+      - {x: 0.3110749, y: -0.23289901}
 --- !u!1 &1005662570
 GameObject:
   m_ObjectHideFlags: 0
@@ -28624,9 +28766,10 @@ GameObject:
   - component: {fileID: 1377188668}
   - component: {fileID: 1377188667}
   - component: {fileID: 1377188666}
+  - component: {fileID: 1377188669}
   m_Layer: 0
   m_Name: AsteroidsTileMap_11 (4)
-  m_TagString: Untagged
+  m_TagString: Asteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28717,6 +28860,76 @@ Transform:
   m_Father: {fileID: 302952161}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 38.004}
+--- !u!60 &1377188669
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377188665}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.33387622, y: -0.21009772}
+      - {x: 0.3436482, y: -0.14495113}
+      - {x: 0.3436482, y: -0.10586319}
+      - {x: 0.32410422, y: -0.08306189}
+      - {x: 0.33387622, y: -0.03745928}
+      - {x: 0.3534202, y: -0.021172637}
+      - {x: 0.37296414, y: 0.0016286644}
+      - {x: 0.3794788, y: 0.017915308}
+      - {x: 0.3794788, y: 0.0732899}
+      - {x: 0.37622148, y: 0.12214983}
+      - {x: 0.36319217, y: 0.23941368}
+      - {x: 0.35016286, y: 0.29478827}
+      - {x: 0.30781758, y: 0.30781758}
+      - {x: 0.24918567, y: 0.3306189}
+      - {x: 0.21335503, y: 0.3306189}
+      - {x: 0.19381107, y: 0.36970684}
+      - {x: 0.13843648, y: 0.43811074}
+      - {x: 0.11563517, y: 0.4478827}
+      - {x: 0.06677524, y: 0.4478827}
+      - {x: 0.021172637, y: 0.44462538}
+      - {x: -0.0048859934, y: 0.41530943}
+      - {x: -0.08957654, y: 0.37622148}
+      - {x: -0.12540716, y: 0.3566775}
+      - {x: -0.16775243, y: 0.32410422}
+      - {x: -0.1872964, y: 0.30456024}
+      - {x: -0.1742671, y: 0.23289901}
+      - {x: -0.2198697, y: 0.19055374}
+      - {x: -0.23289901, y: 0.15798046}
+      - {x: -0.24592833, y: 0.10260586}
+      - {x: -0.27198696, y: 0.04397394}
+      - {x: -0.262215, y: 0.011400651}
+      - {x: -0.262215, y: -0.021172637}
+      - {x: -0.242671, y: -0.08957654}
+      - {x: -0.23615634, y: -0.13517915}
+      - {x: -0.22312702, y: -0.20032573}
+      - {x: -0.21661237, y: -0.23615634}
+      - {x: -0.20032573, y: -0.24918567}
+      - {x: -0.10912052, y: -0.28175893}
+      - {x: -0.03745928, y: -0.3110749}
+      - {x: 0.017915308, y: -0.33387622}
+      - {x: 0.03745928, y: -0.34690553}
+      - {x: 0.07654723, y: -0.34690553}
+      - {x: 0.1286645, y: -0.3208469}
+      - {x: 0.21661237, y: -0.2882736}
+      - {x: 0.3110749, y: -0.23289901}
 --- !u!1 &1385172313
 GameObject:
   m_ObjectHideFlags: 0
@@ -28728,9 +28941,10 @@ GameObject:
   - component: {fileID: 1385172316}
   - component: {fileID: 1385172315}
   - component: {fileID: 1385172314}
+  - component: {fileID: 1385172317}
   m_Layer: 0
   m_Name: AsteroidsTileMap_11 (5)
-  m_TagString: Untagged
+  m_TagString: Asteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28821,6 +29035,76 @@ Transform:
   m_Father: {fileID: 302952161}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 8.356}
+--- !u!60 &1385172317
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385172313}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.33387622, y: -0.21009772}
+      - {x: 0.3436482, y: -0.14495113}
+      - {x: 0.3436482, y: -0.10586319}
+      - {x: 0.32410422, y: -0.08306189}
+      - {x: 0.33387622, y: -0.03745928}
+      - {x: 0.3534202, y: -0.021172637}
+      - {x: 0.37296414, y: 0.0016286644}
+      - {x: 0.3794788, y: 0.017915308}
+      - {x: 0.3794788, y: 0.0732899}
+      - {x: 0.37622148, y: 0.12214983}
+      - {x: 0.36319217, y: 0.23941368}
+      - {x: 0.35016286, y: 0.29478827}
+      - {x: 0.30781758, y: 0.30781758}
+      - {x: 0.24918567, y: 0.3306189}
+      - {x: 0.21335503, y: 0.3306189}
+      - {x: 0.19381107, y: 0.36970684}
+      - {x: 0.13843648, y: 0.43811074}
+      - {x: 0.11563517, y: 0.4478827}
+      - {x: 0.06677524, y: 0.4478827}
+      - {x: 0.021172637, y: 0.44462538}
+      - {x: -0.0048859934, y: 0.41530943}
+      - {x: -0.08957654, y: 0.37622148}
+      - {x: -0.12540716, y: 0.3566775}
+      - {x: -0.16775243, y: 0.32410422}
+      - {x: -0.1872964, y: 0.30456024}
+      - {x: -0.1742671, y: 0.23289901}
+      - {x: -0.2198697, y: 0.19055374}
+      - {x: -0.23289901, y: 0.15798046}
+      - {x: -0.24592833, y: 0.10260586}
+      - {x: -0.27198696, y: 0.04397394}
+      - {x: -0.262215, y: 0.011400651}
+      - {x: -0.262215, y: -0.021172637}
+      - {x: -0.242671, y: -0.08957654}
+      - {x: -0.23615634, y: -0.13517915}
+      - {x: -0.22312702, y: -0.20032573}
+      - {x: -0.21661237, y: -0.23615634}
+      - {x: -0.20032573, y: -0.24918567}
+      - {x: -0.10912052, y: -0.28175893}
+      - {x: -0.03745928, y: -0.3110749}
+      - {x: 0.017915308, y: -0.33387622}
+      - {x: 0.03745928, y: -0.34690553}
+      - {x: 0.07654723, y: -0.34690553}
+      - {x: 0.1286645, y: -0.3208469}
+      - {x: 0.21661237, y: -0.2882736}
+      - {x: 0.3110749, y: -0.23289901}
 --- !u!4 &1403571128 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8716728645166652300, guid: 4c25cd63e290ad64eb2eba5effed65db,
@@ -29809,9 +30093,10 @@ GameObject:
   - component: {fileID: 1678978593}
   - component: {fileID: 1678978592}
   - component: {fileID: 1678978591}
+  - component: {fileID: 1678978594}
   m_Layer: 0
   m_Name: AsteroidsTileMap_11 (2)
-  m_TagString: Untagged
+  m_TagString: Asteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29902,6 +30187,76 @@ Transform:
   m_Father: {fileID: 302952161}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 40.334003}
+--- !u!60 &1678978594
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678978590}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.33387622, y: -0.21009772}
+      - {x: 0.3436482, y: -0.14495113}
+      - {x: 0.3436482, y: -0.10586319}
+      - {x: 0.32410422, y: -0.08306189}
+      - {x: 0.33387622, y: -0.03745928}
+      - {x: 0.3534202, y: -0.021172637}
+      - {x: 0.37296414, y: 0.0016286644}
+      - {x: 0.3794788, y: 0.017915308}
+      - {x: 0.3794788, y: 0.0732899}
+      - {x: 0.37622148, y: 0.12214983}
+      - {x: 0.36319217, y: 0.23941368}
+      - {x: 0.35016286, y: 0.29478827}
+      - {x: 0.30781758, y: 0.30781758}
+      - {x: 0.24918567, y: 0.3306189}
+      - {x: 0.21335503, y: 0.3306189}
+      - {x: 0.19381107, y: 0.36970684}
+      - {x: 0.13843648, y: 0.43811074}
+      - {x: 0.11563517, y: 0.4478827}
+      - {x: 0.06677524, y: 0.4478827}
+      - {x: 0.021172637, y: 0.44462538}
+      - {x: -0.0048859934, y: 0.41530943}
+      - {x: -0.08957654, y: 0.37622148}
+      - {x: -0.12540716, y: 0.3566775}
+      - {x: -0.16775243, y: 0.32410422}
+      - {x: -0.1872964, y: 0.30456024}
+      - {x: -0.1742671, y: 0.23289901}
+      - {x: -0.2198697, y: 0.19055374}
+      - {x: -0.23289901, y: 0.15798046}
+      - {x: -0.24592833, y: 0.10260586}
+      - {x: -0.27198696, y: 0.04397394}
+      - {x: -0.262215, y: 0.011400651}
+      - {x: -0.262215, y: -0.021172637}
+      - {x: -0.242671, y: -0.08957654}
+      - {x: -0.23615634, y: -0.13517915}
+      - {x: -0.22312702, y: -0.20032573}
+      - {x: -0.21661237, y: -0.23615634}
+      - {x: -0.20032573, y: -0.24918567}
+      - {x: -0.10912052, y: -0.28175893}
+      - {x: -0.03745928, y: -0.3110749}
+      - {x: 0.017915308, y: -0.33387622}
+      - {x: 0.03745928, y: -0.34690553}
+      - {x: 0.07654723, y: -0.34690553}
+      - {x: 0.1286645, y: -0.3208469}
+      - {x: 0.21661237, y: -0.2882736}
+      - {x: 0.3110749, y: -0.23289901}
 --- !u!1 &1710559083
 GameObject:
   m_ObjectHideFlags: 0
@@ -31221,9 +31576,11 @@ GameObject:
   - component: {fileID: 2008877407}
   - component: {fileID: 2008877406}
   - component: {fileID: 2008877405}
+  - component: {fileID: 2008877409}
+  - component: {fileID: 2008877408}
   m_Layer: 0
   m_Name: AsteroidsTileMap_11 (1)
-  m_TagString: Untagged
+  m_TagString: Asteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31314,6 +31671,97 @@ Transform:
   m_Father: {fileID: 302952161}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &2008877408
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008877404}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.33387622, y: -0.21009772}
+      - {x: 0.3436482, y: -0.14495113}
+      - {x: 0.3436482, y: -0.10586319}
+      - {x: 0.32410422, y: -0.08306189}
+      - {x: 0.33387622, y: -0.03745928}
+      - {x: 0.3534202, y: -0.021172637}
+      - {x: 0.37296414, y: 0.0016286644}
+      - {x: 0.3794788, y: 0.017915308}
+      - {x: 0.3794788, y: 0.0732899}
+      - {x: 0.37622148, y: 0.12214983}
+      - {x: 0.36319217, y: 0.23941368}
+      - {x: 0.35016286, y: 0.29478827}
+      - {x: 0.30781758, y: 0.30781758}
+      - {x: 0.24918567, y: 0.3306189}
+      - {x: 0.21335503, y: 0.3306189}
+      - {x: 0.19381107, y: 0.36970684}
+      - {x: 0.13843648, y: 0.43811074}
+      - {x: 0.11563517, y: 0.4478827}
+      - {x: 0.06677524, y: 0.4478827}
+      - {x: 0.021172637, y: 0.44462538}
+      - {x: -0.0048859934, y: 0.41530943}
+      - {x: -0.08957654, y: 0.37622148}
+      - {x: -0.12540716, y: 0.3566775}
+      - {x: -0.16775243, y: 0.32410422}
+      - {x: -0.1872964, y: 0.30456024}
+      - {x: -0.1742671, y: 0.23289901}
+      - {x: -0.2198697, y: 0.19055374}
+      - {x: -0.23289901, y: 0.15798046}
+      - {x: -0.24592833, y: 0.10260586}
+      - {x: -0.27198696, y: 0.04397394}
+      - {x: -0.262215, y: 0.011400651}
+      - {x: -0.262215, y: -0.021172637}
+      - {x: -0.242671, y: -0.08957654}
+      - {x: -0.23615634, y: -0.13517915}
+      - {x: -0.22312702, y: -0.20032573}
+      - {x: -0.21661237, y: -0.23615634}
+      - {x: -0.20032573, y: -0.24918567}
+      - {x: -0.10912052, y: -0.28175893}
+      - {x: -0.03745928, y: -0.3110749}
+      - {x: 0.017915308, y: -0.33387622}
+      - {x: 0.03745928, y: -0.34690553}
+      - {x: 0.07654723, y: -0.34690553}
+      - {x: 0.1286645, y: -0.3208469}
+      - {x: 0.21661237, y: -0.2882736}
+      - {x: 0.3110749, y: -0.23289901}
+--- !u!50 &2008877409
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008877404}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!4 &2015297425 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3220879540806600818, guid: 3a107c71a6f118f4383b60e298801c1c,
