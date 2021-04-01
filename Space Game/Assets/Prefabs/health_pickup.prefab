@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  healthPickUpAmount: 2
+  healthPickUpAmount: 1
 --- !u!61 &858914484523931429
 BoxCollider2D:
   m_ObjectHideFlags: 0
