@@ -32131,7 +32131,6 @@ GameObject:
   - component: {fileID: 2008877407}
   - component: {fileID: 2008877406}
   - component: {fileID: 2008877405}
-  - component: {fileID: 2008877409}
   - component: {fileID: 2008877408}
   m_Layer: 0
   m_Name: AsteroidsTileMap_11 (1)
@@ -32296,27 +32295,6 @@ PolygonCollider2D:
       - {x: 0.1286645, y: -0.3208469}
       - {x: 0.21661237, y: -0.2882736}
       - {x: 0.3110749, y: -0.23289901}
---- !u!50 &2008877409
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2008877404}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!4 &2015297425 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3220879540806600818, guid: 3a107c71a6f118f4383b60e298801c1c,
