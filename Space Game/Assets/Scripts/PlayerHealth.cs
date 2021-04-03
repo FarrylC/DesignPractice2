@@ -23,8 +23,34 @@ public class PlayerHealth : MonoBehaviour
     //Shield Sprite on Player
     private GameObject playerShield;
     private SpriteRenderer playerShieldSpriteRenderer;
-     
-    
+
+
+    //Audio_Variables
+    public AudioSource asteroidHit;
+    public AudioSource enemyHit;
+
+    #region SFX
+    //SFX Functions
+    void Asteroid_Hit_SFX()
+    {
+        if (!asteroidHit.isPlaying)
+        {
+            var asteroid_hit_sfx = transform.Find("AsteroidCollision").gameObject;
+            var asteroid_hit_sfx_source = asteroid_hit_sfx.GetComponent<AudioSource>();
+            asteroid_hit_sfx_source.Play();
+        }
+    }
+    void Enemy_Hit_SFX()
+    {
+        if (!enemyHit.isPlaying)
+        {
+            var enemy_hit_sfx = transform.Find("EnemyCollision").gameObject;
+            var enemy_hit_sfx_source = enemy_hit_sfx.GetComponent<AudioSource>();
+            enemy_hit_sfx_source.Play();
+        }
+    }
+    #endregion
+
     // Start is called before the first frame update
     void Start()
     {
@@ -87,7 +113,7 @@ public class PlayerHealth : MonoBehaviour
                 StartCoroutine(ColorShiftPlayerDamaged());
                 SendMessage("KnockBack");
                 setHealth(health - 1);
-
+                Asteroid_Hit_SFX();
                 SetInvincible();
             }
         }
@@ -102,7 +128,9 @@ public class PlayerHealth : MonoBehaviour
                 _damaged = true;
                 StartCoroutine(ColorShiftPlayerDamaged());
                 setHealth(health - 1);
+                Asteroid_Hit_SFX();
                 SetInvincible();
+
             }
         }
     }
@@ -116,7 +144,7 @@ public class PlayerHealth : MonoBehaviour
                 _damaged = true;
                 StartCoroutine(ColorShiftPlayerDamaged());
                 setHealth(health - 1);
-
+                Enemy_Hit_SFX();
                 SetInvincible();
             }
         }
@@ -163,5 +191,8 @@ public class PlayerHealth : MonoBehaviour
         else
         PostProcessVFX.weight = 0f;
     }
+
+
+
 
 }
