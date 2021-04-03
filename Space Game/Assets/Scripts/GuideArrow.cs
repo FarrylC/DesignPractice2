@@ -19,6 +19,6 @@ public class GuideArrow : MonoBehaviour
     {
         Vector2 dirToGoal = (goalPos.position - playerPos.position).normalized;
         transform.up = dirToGoal;
-        transform.localPosition = new Vector2(325 * curveX.Evaluate(dirToGoal.x), 175 * curveY.Evaluate(dirToGoal.y));
+        transform.localPosition = new Vector2(350 * curveX.Evaluate(dirToGoal.x), 175 * curveY.Evaluate(dirToGoal.y));
     }
 }
