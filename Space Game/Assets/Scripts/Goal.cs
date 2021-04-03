@@ -20,6 +20,8 @@ public class Goal : MonoBehaviour
         audio.Play();
         yield return new WaitForSeconds(audio.clip.length);
         GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>().GoToScene(completedSceneNum);
+        MenuAudioManager.instance.gameObject.GetComponent<AudioSource>().Play();
+
     }
 
 
