@@ -38,6 +38,8 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        UpdateLevelDisplay();
         HandleRedBorder();
     }
 
@@ -76,9 +78,19 @@ public class GameController : MonoBehaviour
 
     public void UpdateLevelDisplay()
     {
-        // If there is no display label, do nothing
-        if (levelDisplay == null)
+        // If the level display is already updated, do nothing
+        if (levelDisplay != null)
             return;
+
+        // If there is no display label, do nothing
+        try
+        {
+            levelDisplay = GameObject.FindGameObjectWithTag("Level Display").GetComponent<Text>();
+        }
+        catch
+        {
+            return;
+        }
 
         // Show the name of the current level
         levelDisplay.text = levelNames[currentLevel - 1];
@@ -87,5 +99,15 @@ public class GameController : MonoBehaviour
     public void GoToScene(int sceneNum)
     {
         SceneManager.LoadScene(sceneNum);
+
+        // Update current level
+        switch(sceneNum){
+            case(2):
+                currentLevel = 1;
+                break;
+            case (3):
+                currentLevel = 2;
+                break;
+        }
     }
 }
